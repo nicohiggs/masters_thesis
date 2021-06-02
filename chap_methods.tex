@@ -1,0 +1,73 @@
+- intro and abstract similar to paper
+
+- from paper plus links to earlier discussed motivations for multi-level modeling
+
+\section{Multilevel Model}
+
+- similar to paper
+- may need to build this up so as to include all data experiments or a more general version to refer back to
+
+We infer home advantage by fitting a regression model to predict the points scored in each game while adjusting for relative team strengths and home advantage. We adjust for relative team strengths by modelling both an offensive rating and a defensive rating for each team. We argue this better represents real differences between teams and allows the model to better infer if a team performs better or worse when playing at home by measuring its performance relative to its average offensive performance versus its opponents average defensive performance. This section describes in detail the parameters of the model, their interpretation, and how we fit the model.
+
+We aimed to build a parsimonious model to infer home advantage for each league while adjusting for relative team strengths and accounting for uncertainty in the data and parameter estimates. We needed a method that was robust to smaller sample sizes because we only had one COVID-19 adjusted season for each league to compare to and because this sample becomes smaller as you include more parameters which splits the data into smaller groups. We also wanted to be able to quantify the uncertainty in our parameter estimates. To address these concerns we adopt a Bayesian multi-level regression model framework building upon previous work \mbox{\cite{Baio2010} \cite{Glickman1998} \cite{Lopez2018} \cite{Benz2020}} that allows for pooling results across all teams to infer home advantage. The partial-pooling of multi-level regression modelling allows us to separate the effects of individual teams offensive and defensive strengths from their group level means and helps prevent overfitting by adjusting parameter estimates through a process commonly referred to as "shrinkage to the mean" \mbox{\cite{Gelman2014} \cite{Gelman2006} \cite{McElreath2020}}. We argue the pooling of data across each teams results to better handle smaller sample sizes while preventing overfitting, and the ability to quantify the uncertainty in parameter estimates makes Bayesian multi-level regression an ideal choice for this task.
+
+We model the response variable of the number of points scored by each team in each game as Negative Binomial:
+
+where \(y_{ij} = [y_{i1}, y_{i0}]\) is the vector of observed points scored in game \(i\) by the home (\(j=1\)) and away (\(j=0\)) teams and \(\mu_{ij} = [\mu_{i1}, \mu_{i0}]\) are the goal expectations of the home and away teams in game \(i\). The \(\alpha\) parameter allows for the flexibility of fitting to overdispersed data where the variance is much greater than the mean. In our experiments we have found that defining \(\alpha\) as a fraction of \(\mu_{ij}\) led to better sampling and model fit. Thus, we define \(\alpha_{ij} = \mu_{ij} * \lambda\) and then sample \(\lambda\) when fitting the model. We model the logarithm of goal expectation as a linear combination of explanatory variables:
+
+\begin{equation} \label{eq:expected points}
+\begin{split}
+\text{log}(\mu_{i1}) &= \gamma_{sp} + \beta_{sp} + \omega_{sh[i]} + \delta_{sa[i]} \\
+\text{log}(\mu_{i0}) &= \gamma_{sp} + \omega_{sa[i]} + \delta_{sh[i]}
+\end{split}
+\end{equation}
+
+where \(\gamma_{sp}\) is the intercept term for expected log points in season, with \(s = [0, 1, 2, 3, 4]\) corresponding to the 2016, 2017, 2018, 2019, and 2020 seasons respectively. The subscript \(p\) indicates regular season (\(p=0\)) or playoffs (\(p=1\)). For the results in Figure \ref{fig:ha_pooled}, all previous seasons are combined (\(s=0\)) and compared to the COVID-19 adjusted season (\(s=1\)). Home advantage is represented by \(\beta_{sp}\) with \(s\) and \(p\) the same as the intercept. The offensive and defensive strength of the two teams are represented by \(\omega\) and \(\delta\). The nested indexes \(h[i]\) and \(a[i]\) identify the teams playing at home and away respectively and we use this nested notation to emphasize the multi-level nature of these parameters as they are modelled as exchangeable from a common distribution \cite{McElreath2020} \cite{Gelman2014} \cite{Gelman2006}. This enables pooling of information across games played by all teams in a league and results in mixing of the observable variables \((y_{ij})\) at this higher level which accounts for correlation in home and away points scored in each game \cite{Baio2010}.
+
+In this model formulation we are estimating different home advantage parameters for the regular season and playoffs as well as for each individual season. The primary motivation for this is because the NHL and NBA COVID-19 bubbles essentially only occurred during their playoffs and we therefore want to separate home advantage during the playoffs for a more direct comparison. Modelling in this way also addresses potential questions of whether home advantage changes each year or remains constant. Our results in Figure \mbox{\ref{fig:ha_pooled}} are from estimating one home advantage parameter prior to COVID-19 and one afterwards. We then show the results of modelling home advantage separately for each season and show the results in Figure \mbox{\ref{fig:ha_main}} which reveal some interesting differences as discussed in the Results section.
+
+In (\ref{eq:expected points}) we see that the home team's goal expectation is a linear combination of the home team's offensive strength and the away team's defensive strength as well as a constant home advantage. Conversely, the away team's goal expectation is a linear combination of the away team's offensive strength and the home team's defensive strength with the home advantage parameter noticeably missing. There is no index for league because, although we use the same model consistently across each league, we fit a separate version for each league.
+
+This model formulation results in the intercept representing the logarithm of the overall average of points scored with \(exp(\beta_{sp}), exp(\omega_{sh[i]}),\) and \(exp(\delta_{sa[i]})\) representing multiplicative increases or decreases to the average points scored to determine the expected points scored for an individual game. This can be seen by considering:
+
+\begin{equation}
+\begin{split}
+\text{log}(\mu_{i1}) &= \gamma_{sp} + \beta_{sp} + \omega_{sh[i]} + \delta_{sa[i]} \\
+\mu_{i1} &= \text{exp}(\gamma_{sp} + \beta_{sp} + \omega_{sh[i]} + \delta_{sa[i]}) \\
+\mu_{i1} &= \text{exp}(\gamma_{sp})*\text{exp}(\beta_{sp})*\text{exp}(\omega_{sh[i]})*\text{exp}(\delta_{sa[i]})
+\end{split}
+\end{equation}
+
+For example, a home advantage parameter of \(\beta = 0.25\) would result in multiplying the average points scored by \(\text{exp}(0.25) \approx 1.28,\) which can be interpreted as an increase of about 28\% in expected points scored by the home team in a game between teams with relative offensive and defensive strengths \(\omega_{sh[i]}\) and \(\delta_{sa[i]}\) respectively.
+
+\subsection*{Model Fit in PyMC3}
+
+The models are fit using PyMC3, an open source probabilistic programming language that allows us to fit Bayesian models with their implementation of a gradient based Hamiltonian Monte Carlo (HMC) No U-Turn Sampler (NUTS) \cite{pymc3}. As in other previous work \cite{Baio2010} \cite{Benz2020}, we use Bayesian modelling and fitting approaches to allow us to incorporate some prior baseline knowledge of parameters as well as better quantifying uncertainty in the interpretation of parameter estimates.
+
+The Bayesian approach means we need to specify suitable prior distributions for all random parameters in the model. The prior distributions for parameters in our model are:
+
+\begin{equation}
+\begin{split}
+\gamma_{sp} &\sim \mathcal{N}(\theta^*, \sigma^{2*}) \\
+\beta_{sp} &\sim \mathcal{N}(0, 1) \\
+\lambda &\sim \text{Uniform}(0, 1000) \\
+\omega_s &\sim \mathcal{N}(0, \sigma_{s\omega}) \\
+\delta_s &\sim \mathcal{N}(0, \sigma_{s\delta}) \\
+\sigma_{s\omega} &\sim \text{HalfNormal}(1) \\
+\sigma_{s\delta} &\sim \text{HalfNormal}(1)
+\end{split}
+\end{equation}
+
+where \(\theta^*\) is the logarithm of the average points scored, and \(\sigma^{2*}\) is the logarithm of the variance of points scored, over the regular seasons and playoffs of the league being modelled. We note that we found \(\gamma_{sp}\) fits close to \(\theta^*\) even when using a weakly informative prior, but we keep this formulation as it maintains the spirit of using prior information in Bayesian analysis. We allow \(\lambda\) to potentially be large for instances where there is no overdispersion in the outcome variable because a large \(\lambda\) results in a large \(\alpha_{ij}\) which makes the Negative Binomial distribution become similar to a Poisson distribution.
+
+The model is fit using PyMC3's NUTS sampler using 4 chains of 2000 iterations with 1000 tune steps for a result of 8,000 samples from 12,000 total draws. It is standard practice to check convergence with the \(\hat{R}\) statistic from \cite{Gelman1992} \cite{Brooks1997}.  Each model fit produced \(\hat{R}\) statistics of 1.00 with no divergences \cite{Betancourt2017}.
+
+\section{Negative Binomial}
+
+- tables and figures like paper for justification
+
+\section{Experiments}
+
+- synthetic data and then real data showing overfitting and the value of shrinkage
+- maybe the synthetic ha simulations
+- the experiments from the paper

@@ -1,0 +1,79 @@
+\section{Experiments}
+
+\section{Home Advantage}
+
+- similar to paper
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{figures/Figure_1.pdf}
+	\caption{Distributions of the estimated home advantage for the NHL, NBA, MLB, and NFL for pre and post COVID adjusted seasons. Home advantage for playoffs are reported for NHL and NBA because that is when their COVID restricted games took place. Home advantage for regular season is reported for MLB and NFL as their respective playoff seasons are too small for stable results. Red distributions represent COVID-19 bubble adjusted seasons.}
+	\label{fig:ha_pooled}
+\end{figure}
+
+The distributions for the estimates of the home advantage parameters from pooling the previous four pre-COVID-19 seasons/playoffs together can be seen in Figure \mbox{\ref{fig:ha_pooled}} with the COVID-19 restricted season/playoffs coloured red. The peaks of these distributions represent the most likely values for the home advantage parameter and their width represents the uncertainty in these estimates. We can use these distributions to directly measure the probability the home advantage parameter is less than the previous seasons. The leftward shift of the distribution for the COVID-19 restricted season/playoffs suggests that home advantage decreased in the NHL, NBA, and NFL while not changing for the MLB.
+
+Figure \mbox{\ref{fig:ha_main}} shows results from estimating home advantage individually for each prior season. This more granular view of pre-COVID-19 home advantage reveals greater season-to-season variation in home advantage that is missing in Figure \mbox{\ref{fig:ha_pooled}}. Nevertheless, the year-over-year estimates in Figure \mbox{\ref{fig:ha_main}} show the results of reduced home advantage in COVID-19 restricted season/playoffs holding for the NHL, NFL, and NBA, albeit with a single past season with lower home advantage in both the NFL and NBA. The remainder of this section examines these estimated distributions and their implications.
+
+For the NHL and NBA data, Figures \mbox{\ref{fig:ha_pooled}} and \mbox{\ref{fig:ha_main}} and our analysis focus on their playoff seasons because the NHL and NBA COVID-19 seasons only took place during their playoff seasons. In contrast, the MLB and NFL had COVID-19 restrictions for their entire seasons, therefore, Figures \mbox{\ref{fig:ha_pooled}} and \mbox{\ref{fig:ha_main}}, and our analysis for those leagues are focused on their regular season games. Focusing on the MLB and NFL regular seasons is not only convenient but arguably necessary as their playoff seasons consist of much fewer games than the NHL and NBA playoff seasons, resulting in high uncertainty of parameter estimates. The NHL and NBA regular season results as well as the MLB and NFL playoff results are provided in the supplementary materials.
+
+The home advantage parameter, $\beta$, represents a multiplier of $\text{exp}(\beta)$ applied to expected points. For example, an estimated home advantage parameter for the NBA of $0.05$ represents a $\text{exp}(0.05) \approx 1.0513$ multiplier on expected points or an increase in expected points of 5\%. With average points scored in the NBA being around 107 this would translate to approximately a 5-point home advantage on average in the NBA playoffs. We provide a full description and interpretation of the model in the Methods section.
+
+For the NHL data, the results in both Figures \mbox{\ref{fig:ha_pooled}} and \mbox{\ref{fig:ha_main}} show the home advantage parameter confidently above 0 for pre-COVID-19 seasons and confidently below 0 for the COVID-19 bubble. The probability the home advantage parameter $(\beta)$ is less than 0 for the COVID-19 bubble is $\Pr(\beta < 0) = 0.95$. The probability the home advantage parameter is less than the previous playoff seasons mean of $0.081$ is $0.998$. These results give strong evidence that home advantage in the NHL was negatively impacted by the COVID-19 bubble.
+
+For the NBA data, the pooled home advantage parameter estimate in Figure \mbox{\ref{fig:ha_pooled}} is confidently above 0 and tightly around 0.05. For the COVID-19 affected playoffs, the probability the home advantage is less than 0 is only $0.17$, but the probability that it is less than the pre-COVID-19 mean of 0.05 is $0.999$, suggesting that home advantage in the NBA was negatively impacted by the COVID-19 bubble. However, when examining the year-to-year estimates of prior seasons in Figure \mbox{\ref{fig:ha_main}} we see a decreasing trend in home advantage in the NBA playoffs with the estimate for the NBA playoffs in 2017 appearing as almost as much of an outlier as the COVID-19 estimate. This suggests the decreased home advantage in the COVID-19 could potentially be a random outlier. The uncertainty in these estimates means we can not make definitive conclusions in the absence of more data. We conclude that it is probable that home advantage in the NBA decreased in the COVID-19 bubble but not as definitively as the NHL results.
+
+For the MLB data, the home advantage parameter is surprisingly likely to be slightly greater than it had been in previous seasons. The probability the home advantage parameter is less than the mean of the previous seasons is $\Pr(\beta < 0.036) = 0.26$. When comparing the COVID-19 estimate to the previous seasons in Figure \mbox{\ref{fig:ha_main}} there appears to be no noteworthy difference. This gives evidence that home advantage in the MLB was unlikely to be negatively impacted by the COVID-19 restrictions and was likely unaffected by the restrictions.
+
+For the NFL data, the pooled home advantage parameter estimate in Figure \mbox{\ref{fig:ha_pooled}} is confidently above 0 with a mean of 0.078. For the COVID-19 affected season, the probability the home advantage is less than 0 is $0.388$, but the probability that it is less than the pre-COVID-19 mean of 0.078 is $0.976$, suggesting that home advantage in the NFL was negatively impacted by the COVID-19 restrictions. However, when examining the year-to-year estimates of prior seasons there is a clear pattern of home advantage decreasing in the NFL and even being lower in 2019 than it was in the 2020 COVID-19 adjusted season. We argue the results in Figure \mbox{\ref{fig:ha_main}} are enough to overturn the results in Figure \mbox{\ref{fig:ha_pooled}} and conclude that home advantage in the NFL was not impacted from its previous trend by the COVID-19 restrictions.
+
+In summary, results for pooled (Figure~\mbox{\ref{fig:ha_pooled}}) and individual~(Figure~\mbox{\ref{fig:ha_main}}) past seasons give strong evidence that home advantage in the NHL was negatively impacted during the COVID-19 restricted playoff season and that home advantage in the MLB was unaffected by the restrictions. Pooled past season results also suggest home advantage was negatively impacted by the COVID-19 restricted seasons for the NBA and NFL, however a closer examination of the individual past season results reveals a trend of decreasing home advantage over the past few seasons, which may partly account for the lower home advantage found during NBA and NFL COVID-19 restrictions.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{figures/Figure_2.pdf}
+	\caption{Distributions of the estimated home advantage for the NHL, NBA, MLB, and NFL over the past 5 seasons from 2016-2020. Home advantage for playoffs are reported for NHL and NBA because that is when their COVID restricted games took place. Home advantage for regular season is reported for MLB and NFL as their respective playoff seasons are too small for stable results. Red distributions represent COVID-19 bubble adjusted seasons.}
+	\label{fig:ha_main}
+\end{figure}
+
+\subsection*{Model Fit Comparisons}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{figures/Figure_3.pdf}
+	\caption{Comparison of distribution of home points in the models and the observed data for each league. The Negative Binomial model noticeably provides a better overall fit across each league.}
+	\label{fig:comparisons}
+\end{figure}
+
+In this section we present the results of fitting our model with the Negative Binomial distribution as the likelihood for point totals, as compared to the more commonly used Normal and Poisson distributions.
+
+Since point totals in sports are positive integers, the Poisson distribution is a natural choice for modelling their outcomes. The effectiveness of the Poisson distribution for modelling point totals has been shown in several works analyzing European football data \cite{Karlis2003} \cite{Baio2010} \cite{Benz2020}. One shortcoming of the Poisson distribution is that it only has one parameter and this leads to the strong assumption that the mean is equal to the variance. For low scoring sports like European football and hockey, this is usually a fine assumption. However, this is an invalid assumption for several of the sports we analyze in this paper. Table \ref{tab:loo} reports the dispersion statistic \(\sigma_p\). The dispersion statistic represents how much greater the variance is than the mean while adjusting for sample size and model complexity and is computed as  \(\chi^2/(n-p)\) for each league, where \(\chi^2\) is the Pearson chi-squared statistic of the point totals data, and \(n-p\) are the degrees of freedom with \(n\) representing the sample size of the point totals data and \(p\) representing the number of predictors in our model. The commonly suggested threshold, \(\sigma_p > T\), for determining when a Poisson model is no longer appropriate is around \(1.2 < T < 2\) \cite{Payne2018} \cite{Cameron1990}. Table \ref{tab:loo} shows the NBA, MLB, and NFL having potential overdispersion in their point totals and thus, the Poisson distribution is likely inappropriate and less effective. We instead opt for using the Negative Binomial distribution because it has an extra parameter \(\alpha\) that gives greater flexibility and better model fit to data that is overdispersed while still adequately fitting models without overdispersion.
+
+To establish the efficacy of the Negative Binomial distribution in our model, we fit and compare models using the Poisson and Normal distributions across each league. We fit Poisson and Normal regression models by changing the likelihood of the model in (\ref{eq:likelihood}) to \(y_{ij} | \mu_{ij} \sim \text{Pois}(\mu_{ij})\) for the Poisson regression (and subsequently drop \(\alpha\) from the rest of the model as it is not needed), and \(y_{ij} | \mu_{ij}, \sigma^2 \sim \mathcal{N}(\mu_{ij}, \sigma^2)\) for the Normal regression (and use a weakly informative prior \(\sigma^2 \sim \text{HalfNormal}(50)\)). Otherwise the models are identical and their interpretation remains the same as is discussed in the Methods section.
+
+We evaluate the models across each league by estimating the out-of-sample predictive fit via leave-one-out cross-validation (LOO). Following the work of Vehtari \cite{Vehtari2016} we approximate LOO using Pareto-smoothed importance sampling (PSIS) and report the results in Table \ref{tab:loo}. We note here that we also used the widely-applicable information criterion (WAIC) \cite{Watanabe2010} but found the results to be nearly identical and the conclusions the same. Examining Table \ref{tab:loo} we see that for the NHL and NBA, where there is little to no overdispersion, the Poisson and Negative Binomial models fit almost identically with the Negative Binomial model starting to show small improvement for the slightly overdispersed NBA data. As overdispersion increases for the MLB and NFL data we see the fit of the Negative Binomial model become noticeably better. The Negative Binomial model also outperforms the Normal model across each league except for the NFL where we see it fit only slightly worse while both models greatly outperform the Poisson model.
+
+These differences in fit can be seen visually in Figure \ref{fig:comparisons} where we plot the distribution of observed home point totals in black along with 2000 sampled model fits in green for Poisson, blue for Negative Binomial, and red for Normal; with the respective mean model fits as dashed lines. The differences between the Poisson and Negative Binomial models becomes increasingly apparent for the leagues with greater overdispersion, while the Normal model comparatively struggles for each league except the NFL where both the Normal and Negative Binomial greatly outperform the Poisson model. Because the point totals of the sports we are considering are positive integers prone to overdispersion and based on the results in Table \ref{tab:loo} and Figure \ref{fig:comparisons}, we conclude that the Negative Binomial distribution is the most appropriate for regression modelling professional hockey, basketball, baseball, and American football.
+
+\begin{comment}
+\begin{table}
+	\centering
+	\begin{tabular}{c@{\hskip0.35in}c@{\hskip0.35in}c@{\hskip 0.25in}c@{\hskip 0.25in}c@{\hskip 0.15in}c}\toprule
+		& $\pmb{\sigma_p}$ & \textbf{Model} & \textbf{LOO} & \textbf{dLOO} & \textbf{dSE}\\\midrule
+		&& \textbf{Poisson} & \textbf{-24761.3} & - & -\\
+		NHL & 0.99 & NB & -24761.5 & 0.2 & 0.2\\
+		&& Normal & -25140.9 & 379.5 & 23.4\\\midrule
+		&& Poisson & -49018.3 & 53.5 & 11.0\\
+		NBA & 1.50 & \textbf{NB} & \textbf{-48964.8} & - & -\\
+		&& Normal & -48981.9 & 16.6 & 7.5\\\midrule
+		&& Poisson & -57458.7 & 4115.8 & 120.9\\
+		MLB & 2.27 & \textbf{NB} & \textbf{-53342.9} & - & -\\
+		&& Normal & -55696.8 & 2353.17 & 65.1\\\midrule
+		&& Poisson & -11751.2 & 2042.5 & 119.0\\
+		NFL & 4.56 & NB & -9841.7 & 133.0 & 22.1\\
+		&& \textbf{Normal} & \textbf{-9708.7} & - & -
+		\\\bottomrule
+	\end{tabular}
+	\caption{Comparison of estimated negative log-likelihood of leave-one-out cross-validation (LOO) for each model across each league. The differences between the Poisson, Negative Binomial (NB), and Normal models are reported relative to the best fitting model (dLOO) for each league; along with the standard error of the estimated differences (dSE). The dispersion statistic, \(\sigma_p\), indicates how much greater the variance is than the mean for point totals in each league and signals overdispersion when \(\sigma_p > 2\). The NB model noticeably outperforms the Poisson model for leagues with greater overdispersion (MLB and NFL) while being nearly identical for leagues with little to no overdispersion (NHL and NBA). The NB model also outperforms the Normal model in each league except the NFL where they are close to one another while both vastly outperforming the Poisson model.}\label{tab:loo}
+\end{table}
+\end{comment}
