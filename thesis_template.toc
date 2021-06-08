@@ -6,22 +6,22 @@
 \contentsline {chapter}{List of Figures}{viii}{section*.10}
 \contentsline {chapter}{List of Abbreviations}{ix}{section*.11}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Background}{2}{chapter.2}
-\contentsline {section}{\numberline {2.1}Home Advantage}{2}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Related Work}{2}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Contribution}{4}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Bayesian Inference}{5}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Introduction}{5}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Multilevel Modeling}{6}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Markov Chain Monte Carlo}{8}{subsection.2.2.3}
-\contentsline {chapter}{\numberline {3}Methods}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Multilevel Model}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}Negative Binomial}{12}{section.3.2}
-\contentsline {section}{\numberline {3.3}Experiments}{12}{section.3.3}
-\contentsline {chapter}{\numberline {4}Results}{13}{chapter.4}
-\contentsline {section}{\numberline {4.1}Experiments}{13}{section.4.1}
-\contentsline {section}{\numberline {4.2}Home Advantage}{13}{section.4.2}
-\contentsline {chapter}{\numberline {5}Conclusion}{20}{chapter.5}
-\contentsline {chapter}{References}{21}{section*.16}
-\contentsline {chapter}{Appendix \numberline {A}Sample Appendix}{21}{Appendix.1.A}
-\contentsline {chapter}{Appendix \numberline {B}Another Sample Appendix}{22}{Appendix.1.B}
+\contentsline {chapter}{\numberline {2}Background}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Home Advantage}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Related Work}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Contribution}{5}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Bayesian Inference}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Introduction}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Multilevel Modeling}{7}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Markov Chain Monte Carlo}{9}{subsection.2.2.3}
+\contentsline {chapter}{\numberline {3}Methods}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}Multilevel Model}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}Negative Binomial}{13}{section.3.2}
+\contentsline {section}{\numberline {3.3}Experiments}{13}{section.3.3}
+\contentsline {chapter}{\numberline {4}Results}{14}{chapter.4}
+\contentsline {section}{\numberline {4.1}Experiments}{14}{section.4.1}
+\contentsline {section}{\numberline {4.2}Home Advantage}{14}{section.4.2}
+\contentsline {chapter}{\numberline {5}Conclusion}{21}{chapter.5}
+\contentsline {chapter}{References}{24}{section*.16}
+\contentsline {chapter}{Appendix \numberline {A}Sample Appendix}{24}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {B}Another Sample Appendix}{25}{Appendix.1.B}
