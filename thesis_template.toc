@@ -18,10 +18,11 @@
 \contentsline {section}{\numberline {3.1}Multilevel Model}{10}{section.3.1}
 \contentsline {section}{\numberline {3.2}Negative Binomial}{13}{section.3.2}
 \contentsline {section}{\numberline {3.3}Experiments}{13}{section.3.3}
-\contentsline {chapter}{\numberline {4}Results}{14}{chapter.4}
-\contentsline {section}{\numberline {4.1}Experiments}{14}{section.4.1}
-\contentsline {section}{\numberline {4.2}Home Advantage}{14}{section.4.2}
-\contentsline {chapter}{\numberline {5}Conclusion}{21}{chapter.5}
-\contentsline {chapter}{References}{24}{section*.16}
-\contentsline {chapter}{Appendix \numberline {A}Sample Appendix}{24}{Appendix.1.A}
-\contentsline {chapter}{Appendix \numberline {B}Another Sample Appendix}{25}{Appendix.1.B}
+\contentsline {section}{\numberline {3.4}Model Evaluation}{15}{section.3.4}
+\contentsline {chapter}{\numberline {4}Results}{18}{chapter.4}
+\contentsline {section}{\numberline {4.1}Experiments}{18}{section.4.1}
+\contentsline {section}{\numberline {4.2}Home Advantage}{18}{section.4.2}
+\contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.5}
+\contentsline {chapter}{References}{28}{section*.16}
+\contentsline {chapter}{Appendix \numberline {A}Sample Appendix}{28}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {B}Another Sample Appendix}{29}{Appendix.1.B}
