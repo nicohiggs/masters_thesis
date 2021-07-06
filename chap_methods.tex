@@ -117,7 +117,29 @@ H(p) = -Elog(p_i) = - \sum_{i=1}^{n} p_i log(p_i)
 
 In this way, information entropy can be thought of as measuring the uncertainty contained in a probability distribution as the average log-probability of the event (cite Mclreath stat rethink).
 
-- is all this discussion of information theory needed? From here we still need to introduce KL divergence, then deviance, then AIC -> WAIC and then we get to PSIS-LOO
+- need a sentence that connects entropy to KL divergence a bit better here
+
+Kullback-Leibler divergence (KL divergence) is defined as:
+
+\begin{equation}
+D_{KL}(p,q) = \sum_{i} p_i (log(p_i) - log(q_i)) = \sum_{i} p_i log \left(\frac{p_i}{q_i} \right)
+\end{equation}
+
+The KL divergence can be thought of as the average difference in log probability between the target (\textit{p}) and the model (\textit{q}) (cite mclreath). It gives us a measure of distance between a model and our target. The issue is that we do not know what \textit{p} is and therefore we are left to try to approximate the divergence. It turns out that \textit{p} is not entirely necessary for comparing models because it is just an additive term which means you can compute the relative difference between models without actually knowing \textit{p}. Thus, we can use the sum of log probabilities of each observation known as the \textit{log-score}:
+
+\begin{equation}
+S(q) = \sum_i log(q_i)
+\end{equation}
+
+In practice, for Bayesian modelling, we need to average over the posterior distribution and compute a Bayesian log-score known as the \textit{log-pointwise-predictive-density (lppd)}:
+
+\begin{equation}
+lppd(y, \Theta) = \sum_i log \frac{1}{S} \sum_s p(y_i | \Theta_s)
+\end{equation}
+
+The log-score has traditionally been scaled by -2 and referred to as the \textit{deviance}. This is because it has been shown that under general conditions and for many model types a difference between two deviances has a chi-squared distribution. Thus, the factor of 2 is there to scale the log-score to have this property to make more traditional computations such as likelihood ratio tests more convenient. So it is through Information theory that a measure of distance from a model distribution to a target distribution is rigorously defined and referred to as KL divergence. The KL divergence can be approximated using the log-score and the log-score used to determine the relative difference in comparing how close one model is relative to another to the target. While the log-score is a principiled way to measure the distance of our model from its target, it has the same flaw that nearly all methods for evaluating models have: the log-score will generally always improve as the model becomes more complex and thus has the potential to overfit the dataset.
+
+Researchers have developed a method of evaluation known as \textit{information criteria} which essentially adds a penalty term to the log-score in order to account for increasing model complexity.
 
 The work of (cite Vehtari) introduced an efficient computation of LOO-CV from MCMC samples without requiring the repeated re-fitting of the model to data. The approximation is based on importance sampling where the importance weights are stabilized using a method known as Pareto-smoothed importance sampling (PSIS). The PSIS-LOO estimate is also an estimate of the out-of-sample relative K-L divergence (i think i may need to define kl divergence here). In practice is it extremely similar to the Widely Applicable Information Criterion (WAIC) that also estimates the out-of-sample relative K-L divergence. The models that are fit and compared in this thesis all gave near identical results for both PSIS-LOO and WAIC and we have chosen to report just PSIS-LOO in the results section.
 
