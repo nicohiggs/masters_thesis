@@ -2,9 +2,19 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Distributions of the estimated home advantage for the NHL, NBA, MLB, and NFL for pre and post COVID adjusted seasons. Home advantage for playoffs are reported for NHL and NBA because that is when their COVID restricted games took place. Home advantage for regular season is reported for MLB and NFL as their respective playoff seasons are too small for stable results. Red distributions represent COVID-19 bubble adjusted seasons.\relax }}{20}{figure.caption.13}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Distributions of the estimated home advantage for the NHL, NBA, MLB, and NFL over the past 5 seasons from 2016-2020. Home advantage for playoffs are reported for NHL and NBA because that is when their COVID restricted games took place. Home advantage for regular season is reported for MLB and NFL as their respective playoff seasons are too small for stable results. Red distributions represent COVID-19 bubble adjusted seasons.\relax }}{22}{figure.caption.14}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Comparison of distribution of home points in the models and the observed data for each league. The Negative Binomial model noticeably provides a better overall fit across each league.\relax }}{24}{figure.caption.15}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison of models via their Mean-Squared-Error (MSE) on train and test sets for each league. The complete-pooling model underfits, the no-pooling model overfits, and the partial-pooling model provides the best tradeoff in fitting the data while protecting against overfitting.\relax }}{24}{figure.caption.13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {NHL}}}{24}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {NBA}}}{24}{subfigure.1.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {MLB}}}{24}{subfigure.1.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {NFL}}}{24}{subfigure.1.4}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Comparison of models via their estimated out of sample performance as measured by PSIS-LOO. Since the estimates are computed in the same way on the same data, their errors are highly correlated and the grey error bars represent a more accurate estimate of the standard error of the estimates relative to the best performing model.\relax }}{25}{figure.caption.14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {NHL}}}{25}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {NBA}}}{25}{subfigure.2.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {MLB}}}{25}{subfigure.2.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {NFL}}}{25}{subfigure.2.4}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Distributions of the estimated home advantage for the NHL, NBA, MLB, and NFL for pre and post COVID adjusted seasons. Home advantage for playoffs are reported for NHL and NBA because that is when their COVID restricted games took place. Home advantage for regular season is reported for MLB and NFL as their respective playoff seasons are too small for stable results. Red distributions represent COVID-19 bubble adjusted seasons.\relax }}{26}{figure.caption.15}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Distributions of the estimated home advantage for the NHL, NBA, MLB, and NFL over the past 5 seasons from 2016-2020. Home advantage for playoffs are reported for NHL and NBA because that is when their COVID restricted games took place. Home advantage for regular season is reported for MLB and NFL as their respective playoff seasons are too small for stable results. Red distributions represent COVID-19 bubble adjusted seasons.\relax }}{28}{figure.caption.16}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparison of distribution of home points in the models and the observed data for each league. The Negative Binomial model noticeably provides a better overall fit across each league.\relax }}{30}{figure.caption.17}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

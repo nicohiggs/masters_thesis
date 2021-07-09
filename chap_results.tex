@@ -1,5 +1,23 @@
 \section{Experiments}
 
+\begin{figure}
+	\subfloat[NHL]{\includegraphics[width=0.5\textwidth]{figures/mse_nhl.pdf}} 
+	\subfloat[NBA]{\includegraphics[width=0.5\textwidth]{figures/mse_nba.pdf}} \\
+	\subfloat[MLB]{\includegraphics[width=0.5\textwidth]{figures/mse_mlb.pdf}} 
+	\subfloat[NFL]{\includegraphics[width=0.5\textwidth]{figures/mse_nfl.pdf}}
+	\caption{Comparison of models via their Mean-Squared-Error (MSE) on train and test sets for each league. The complete-pooling model underfits, the no-pooling model overfits, and the partial-pooling model provides the best tradeoff in fitting the data while protecting against overfitting.}
+	\label{fig:mses}
+\end{figure}
+
+\begin{figure}
+	\subfloat[NHL]{\includegraphics[width=0.5\textwidth]{figures/loo_nhl.pdf}} 
+	\subfloat[NBA]{\includegraphics[width=0.5\textwidth]{figures/loo_nba.pdf}} \\
+	\subfloat[MLB]{\includegraphics[width=0.5\textwidth]{figures/loo_mlb.pdf}} 
+	\subfloat[NFL]{\includegraphics[width=0.5\textwidth]{figures/loo_nfl.pdf}}
+	\caption{Comparison of models via their estimated out of sample performance as measured by PSIS-LOO. Since the estimates are computed in the same way on the same data, their errors are highly correlated and the grey error bars represent a more accurate estimate of the standard error of the estimates relative to the best performing model.}
+	\label{fig:psis-loos}
+\end{figure}
+
 \section{Home Advantage}
 
 - similar to paper
