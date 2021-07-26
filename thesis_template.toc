@@ -13,18 +13,20 @@
 \contentsline {subsection}{\numberline {2.2.1}Introduction}{5}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Multilevel Modeling}{7}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Markov Chain Monte Carlo}{10}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Model Evaluation and Selection}{14}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Cross Validation, Information Criterion, and Beyond}{14}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Contribution}{17}{subsection.2.3.2}
-\contentsline {chapter}{\numberline {3}Methods}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}Multilevel Model}{19}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Model Fit in PyMC3}{21}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Negative Binomial}{22}{section.3.2}
-\contentsline {section}{\numberline {3.3}Experiments}{22}{section.3.3}
-\contentsline {chapter}{\numberline {4}Results}{25}{chapter.4}
-\contentsline {section}{\numberline {4.1}Experiments}{25}{section.4.1}
-\contentsline {section}{\numberline {4.2}Home Advantage}{25}{section.4.2}
-\contentsline {chapter}{\numberline {5}Conclusion}{34}{chapter.5}
-\contentsline {chapter}{References}{37}{section*.18}
-\contentsline {chapter}{Appendix \numberline {A}Sample Appendix}{37}{Appendix.1.A}
-\contentsline {chapter}{Appendix \numberline {B}Another Sample Appendix}{38}{Appendix.1.B}
+\contentsline {subsection}{\numberline {2.2.4}Hamiltonian Monte Carlo}{13}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Model Evaluation and Selection}{14}{subsection.2.2.5}
+\contentsline {subsubsection}{Cross Validation, Information Criterion, and Beyond}{14}{subsubsection*.13}
+\contentsline {subsubsection}{Posterior Predictive Checks}{20}{subsubsection*.15}
+\contentsline {section}{\numberline {2.3}Contribution}{20}{section.2.3}
+\contentsline {chapter}{\numberline {3}Methods}{22}{chapter.3}
+\contentsline {section}{\numberline {3.1}Multilevel Model}{22}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Model Fit in PyMC3}{24}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Negative Binomial}{25}{section.3.2}
+\contentsline {section}{\numberline {3.3}Experiments}{25}{section.3.3}
+\contentsline {chapter}{\numberline {4}Results}{28}{chapter.4}
+\contentsline {section}{\numberline {4.1}Experiments}{28}{section.4.1}
+\contentsline {section}{\numberline {4.2}Home Advantage}{28}{section.4.2}
+\contentsline {chapter}{\numberline {5}Conclusion}{37}{chapter.5}
+\contentsline {chapter}{References}{40}{section*.21}
+\contentsline {chapter}{Appendix \numberline {A}Sample Appendix}{40}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {B}Another Sample Appendix}{41}{Appendix.1.B}
