@@ -1,8 +1,6 @@
-- intro and abstract similar to paper
+- a brief summarizing paragraph of this whole chapter?
 
-- from paper plus links to earlier discussed motivations for multi-level modeling
-
-\section{Multilevel Model}
+\section{Multilevel Model} \label{multilevel_model}
 
 - similar to paper
 - may need to build this up so as to include all data experiments or a more general version to refer back to
@@ -22,7 +20,7 @@ where \(y_{ij} = [y_{i1}, y_{i0}]\) is the vector of observed points scored in g
 \end{split}
 \end{equation}
 
-where \(\gamma_{sp}\) is the intercept term for expected log points in season, with \(s = [0, 1, 2, 3, 4]\) corresponding to the 2016, 2017, 2018, 2019, and 2020 seasons respectively. The subscript \(p\) indicates regular season (\(p=0\)) or playoffs (\(p=1\)). For the results in Figure \ref{fig:ha_pooled}, all previous seasons are combined (\(s=0\)) and compared to the COVID-19 adjusted season (\(s=1\)). Home advantage is represented by \(\beta_{sp}\) with \(s\) and \(p\) the same as the intercept. The offensive and defensive strength of the two teams are represented by \(\omega\) and \(\delta\). The nested indexes \(h[i]\) and \(a[i]\) identify the teams playing at home and away respectively and we use this nested notation to emphasize the multi-level nature of these parameters as they are modelled as exchangeable from a common distribution \cite{McElreath2020} \cite{Gelman2014} \cite{Gelman2006}. This enables pooling of information across games played by all teams in a league and results in mixing of the observable variables \((y_{ij})\) at this higher level which accounts for correlation in home and away points scored in each game \cite{Baio2010}. Note that the offensive and defensive strengths represented this way could potentially lead to problems of identifiability suggested by previous works (cite baio, benz, and karlis) and fully described in (cite mclreath). The issue is that a given difference in relative team strengths can be solved by multiple different team ratings, similar to a system of equations being singular. In line with previous works (baio, benz, karlis), we force the offensive and defensive ratings across all $T$ teams in each league to sum to zero:
+where \(\gamma_{sp}\) is the intercept term for expected log points in season, with \(s = [0, 1, 2, 3, 4]\) corresponding to the 2016, 2017, 2018, 2019, and 2020 seasons respectively. The subscript \(p\) indicates regular season (\(p=0\)) or playoffs (\(p=1\)). For the results in Figure \ref{fig:ha_pooled}, all previous seasons are combined (\(s=0\)) and compared to the COVID-19 adjusted season (\(s=1\)). Home advantage is represented by \(\beta_{sp}\) with \(s\) and \(p\) the same as the intercept. The offensive and defensive strength of the two teams are represented by \(\omega\) and \(\delta\). The nested indexes \(h[i]\) and \(a[i]\) identify the teams playing at home and away respectively and we use this nested notation to emphasize the multi-level nature of these parameters as they are modelled as exchangeable from a common distribution \cite{McElreath2020} \cite{Gelman2014} \cite{Gelman2006}. This enables pooling of information across games played by all teams in a league and results in mixing of the observable variables \((y_{ij})\) at this higher level which accounts for correlation in home and away points scored in each game \cite{Baio2010}. Note that the offensive and defensive strengths represented this way could potentially lead to problems of identifiability suggested by previous works (cite baio, benz, and karlis) and fully described in (cite mclreath). The issue is that a given difference in relative team strengths can be solved by multiple different team ratings, similar to a system of equations being singular. In line with previous works (baio, benz, karlis), we force the offensive and defensive ratings across all $T$ teams within each league to sum to zero:
 
 \begin{equation} \label{eq:sum to zero}
 \sum_{t=1}^{T} \omega_t = 0, \sum_{t=1}^{T} \delta_t = 0
@@ -48,11 +46,13 @@ For example, a home advantage parameter of \(\beta = 0.25\) would result in mult
 
 \subsection{Model Fit in PyMC3}
 
+- perhaps a figure of 2 images, one is the 'academic' layout of a model and the other is the pymc3 version showing it as the same but 'reversed order'
+
 The models are fit using PyMC3, an open source probabilistic programming language that allows us to fit Bayesian models with their implementation of a gradient based Hamiltonian Monte Carlo (HMC) No U-Turn Sampler (NUTS) \cite{pymc3}. As in other previous work \cite{Baio2010} \cite{Benz2020}, we use Bayesian modelling and fitting approaches to allow us to incorporate some prior baseline knowledge of parameters as well as better quantifying uncertainty in the interpretation of parameter estimates.
 
 The Bayesian approach means we need to specify suitable prior distributions for all random parameters in the model. The prior distributions for parameters in our model are:
 
-\begin{equation}
+\begin{equation} \label{eq:priors}
 \begin{split}
 \gamma_{sp} &\sim \mathcal{N}(\theta^*, \sigma^{2*}) \\
 \beta_{sp} &\sim \mathcal{N}(0, 1) \\
@@ -68,23 +68,33 @@ where \(\theta^*\) is the logarithm of the average points scored, and \(\sigma^{
 
 The model is fit using PyMC3's NUTS sampler using 4 chains of 2000 iterations with 1000 tune steps for a result of 8,000 samples from 12,000 total draws. It is standard practice to check convergence with the \(\hat{R}\) statistic from \cite{Gelman1992} \cite{Brooks1997}.  Each model fit produced \(\hat{R}\) statistics of 1.00 with no divergences \cite{Betancourt2017}.
 
-\section{Negative Binomial}
+\section{Data Experiments}
 
-- tables and figures like paper for justification
+\subsection{Complete pooling, No pooling, and Partial pooling}
+- real data showing overfitting and the value of shrinkage
+We create and compare three models in order to show the benefits of how multilevel modelling partially pools information across groups to improve model fit while preventing overfitting. The first model is referred to as a \textit{completely pooled} model where the data from all groups is completely pooled into one overall average to be used. The completely pooled model adjusts the model described in section \nameref{multilevel_model} by modifying equation \ref{eq:expected points} as follows:
 
-\section{Experiments}
+\begin{equation} \label{eq:cp_model}
+\begin{split}
+\text{log}(\mu_{1}) &= \gamma_{sp} + \beta_{sp} \\
+\text{log}(\mu_{0}) &= \gamma_{sp}
+\end{split}
+\end{equation}
 
-- synthetic data and then real data showing overfitting and the value of shrinkage
-We create and compare three models in order to show the benefits of how multilevel modelling partially pools information across groups to improve model fit while preventing overfitting. The first model is referred to as a \textit{completely pooled} model where the data from all groups is completely pooled into one overall average to be used. The second model is referred to as a \textit{no pooling} model where essentially a separate regression fit is made for each group ignoring the information from other groups. Finally a multilevel model which is also referred to as a \textit{partially pooled} model where essentially separate regressions are fit for each group but with group parameter estimates shrunk to the overall mean relative to sample size and group variances so as to help prevent overfitting. In the completely pooled model there is essentially one global average used for all groups and in this way the model has high bias and ignores the differences amongst groups. In the no pooling model each group has its own parameter fit, but completely ignores the data from other groups and how they are fit resulting in lower bias and a better fit to the data but at the risk of overfitting. The partially pooled model is a balance between these two extremes allowing for a better model fit than the completely pooled model while better protecting against overfitting than the no pooled model.
+This is the simplest regression model where an average number of points for home teams and away teams is calculated and then used for predictions.
 
-To compare the models we created a synthetic dataset for which we know precisely how the data was generated. Half of the data will be used to train each model and evaluate training fit, and then the other half will be a hold out set that will be used to evaluate testing fit on unseen data. We will then repeat the same fitting and evaluating procedures for each model on the actual sports datasets used for home advantage inference in this thesis.
+The second model is referred to as a \textit{no pooling} model where essentially a separate regression fit is made for each group ignoring the information from other groups. This is a traditional regression model and is defined near identically to the model described in section \nameref{multilevel_model}, with the only difference being that the team strength parameters are not mixed. In practice this means that the priors for the team strength parameters $\omega_s$ and $\delta_s$ described in equation \ref{eq:priors} are changed to $\mathcal{N}(0, 1)$. This prevents information being pooled across groups, hence the name no pooling.
 
-To generate the synthetic dataset we use a similar data generating process to \cite{Benz2020}. We generate team attacking and defensive strengths (\(\alpha_t \sim N(0, 0.35)\) and \(\delta_t \sim N(0, 0.35)\)) for \(t=1,...,20\) teams. A game is then simulated by using model (cite model number) to randomly generate the number of points scored by each team with the home advantage parameter set to \(\beta = 0.25\) and intercept \(\mu = 0\). We simulate a regular season by simulating 2 games between each pair of teams, one home game for each team, resulting in \(38\) game appearances for each team and a total of \(380\) games. The sports datasets are the same used in this thesis and are described in (data section??)
+Finally the multilevel model is fit as described in section \nameref{multilevel_model}, which is referred to as a \textit{partially pooled} model for the context of this experiment. The effect of this model is shrinking the team strength estimates from the no pooling modeltowards the overall mean. This effect was described in section ?? and in theory helps to prevent overfitting but worsening the fit to the training dataset in order to improve the out-of-sample fit. This experiment is designed to test how this theory holds up on the sports datasets considered in this thesis.
 
-While the primary use of Bayesian models is to have a distribution for not only parameter estimates but predictions as well, we take the mean of the sample distribution of predictions for each model as their respective predictions to be compared to the actual data. The models are then compared by their mean squared error (MSE), with the results shown in Table ??. There are two key features that stand out in the results in Table ??. First, both the no pooling model and the partial pooling model have lower MSEs in both training and testing. This indicates that the completely pooled model is underfit and that the no pooling and partial pooling model do improve model fit by including group parameters (team ratings in this specific case). Second, the no pooling model provides the best model fit on the training data, but provides worse model fit than the partial pooling model on the test data. This shows the effect of regularization via shrinkage to the mean that was theoretical discussed earlier in section ??. These results give empirical evidence that multilevel models and their partial pooling provide improved model fit while protecting against overfitting, and is the reason we opted to use a multilevel model as the model of choice for inferring home advantage in this thesis.
+In the completely pooled model there is essentially one global average used for all groups and in this way the model has high bias and ignores the differences amongst groups. In the no pooling model each group has its own parameter fit, but completely ignores the data from other groups and how they are fit resulting in lower bias and a better fit to the data but at the risk of overfitting. The partially pooled model is a balance between these two extremes allowing for a better model fit than the completely pooled model while better protecting against overfitting than the no pooled model.
 
-- the experiments from the paper
-- negative binomial
+To compare these models we randomly split each sports dataset in half to create a train-set and test-set. The train-set is be used to train each model and evaluate training fit, and then the model will also be evaluated on the test-set in order to approximate the fit on unseen data. The same fitting and evaluating procedures are performed for each model on each dataset. The results are shown and discussed in section ??.
+
+
+While one of the primary advantages of Bayesian models is computing a full distribution rather than only a point estimate, we can generate point estimates by taking the mean of the sample distribution of predictions for each model as their respective point estimate predictions to be compared to the actual data. The models are then compared by their mean squared error (MSE), with the results shown in Table ??. There are two key features that stand out in the results in Table ??. First, both the no pooling model and the partial pooling model have lower MSEs in both training and testing. This indicates that the completely pooled model is underfit and that the no pooling and partial pooling model do improve model fit by including group parameters (team ratings in this specific case). Second, the no pooling model provides the best model fit on the training data, but provides worse model fit than the partial pooling model on the test data. This shows the effect of regularization via shrinkage to the mean that was theoretical discussed earlier in section ??. These results give empirical evidence that multilevel models and their partial pooling provide improved model fit while protecting against overfitting, and is the reason we opted to use a multilevel model as the model of choice for inferring home advantage in this thesis.
+
+\subsection{Negative Binomial Regression}
 Since point totals in sports are positive integers, the Poisson distribution is a natural choice for modelling their outcomes. The effectiveness of the Poisson distribution for modelling point totals has been shown in several works analyzing European football data \cite{Karlis2003} \cite{Baio2010} \cite{Benz2020}. One shortcoming of the Poisson distribution is that it only has one parameter and this leads to the strong assumption that the mean is equal to the variance. For low scoring sports like European football and hockey, this is usually a fine assumption. However, this is an invalid assumption for several of the sports we analyze in this paper. Table \ref{tab:loo} reports the dispersion statistic \(\sigma_p\). The dispersion statistic represents how much greater the variance is than the mean while adjusting for sample size and model complexity and is computed as  \(\chi^2/(n-p)\) for each league, where \(\chi^2\) is the Pearson chi-squared statistic of the point totals data, and \(n-p\) are the degrees of freedom with \(n\) representing the sample size of the point totals data and \(p\) representing the number of predictors in our model. The commonly suggested threshold, \(\sigma_p > T\), for determining when a Poisson model is no longer appropriate is around \(1.2 < T < 2\) \cite{Payne2018} \cite{Cameron1990}. Table \ref{tab:loo} shows the NBA, MLB, and NFL having potential overdispersion in their point totals and thus, the Poisson distribution is likely inappropriate and less effective. We instead opt for using the Negative Binomial distribution because it has an extra parameter \(\alpha\) that gives greater flexibility and better model fit to data that is overdispersed while still adequately fitting models without overdispersion.
 
 To establish the efficacy of the Negative Binomial distribution in our model, we fit and compare models using the Poisson and Normal distributions across each league. We fit Poisson and Normal regression models by changing the likelihood of the model in (\ref{eq:likelihood}) to \(y_{ij} | \mu_{ij} \sim \text{Pois}(\mu_{ij})\) for the Poisson regression (and subsequently drop \(\alpha\) from the rest of the model as it is not needed), and \(y_{ij} | \mu_{ij}, \sigma^2 \sim \mathcal{N}(\mu_{ij}, \sigma^2)\) for the Normal regression (and use a weakly informative prior \(\sigma^2 \sim \text{HalfNormal}(50)\)). Otherwise the models are identical and their interpretation remains the same as is discussed in the Methods section.
@@ -93,9 +103,5 @@ We evaluate the models across each league by estimating the out-of-sample predic
 
 The results can be seen in figure ?? and table ?? and are discussed in section ??.
 
--home advantage inference
+\subsection{Inferring Home Advantage}
 To make inferences about home advantage prior to and during the COVID-19 pandemic we fit model ?? described in section ??. The fitting of this model results in parameter estimated for home advantage across each of the four leagues analyzed for four seasons prior to and one season during COVID-19. We then analyze the trends and differences across seasons as well as leagues in order to make inferences and draw conclusions about the impact of home advantage in these sports. The results can be seen in figure ?? and are discussed in section ??.
-
-- maybe the synthetic ha simulations
-
-- finish by explicitly stating how each data experiment is evaluated
