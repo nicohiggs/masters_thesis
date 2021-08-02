@@ -28,7 +28,7 @@
 \contentsline {chapter}{\numberline {4}Results}{29}{chapter.4}
 \contentsline {section}{\numberline {4.1}Complete pooling, No pooling, Partial pooling}{29}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Negative Binomial Regression}{32}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Inferring Home Advantage}{34}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Inferring Home Advantage}{32}{subsection.4.1.2}
 \contentsline {chapter}{\numberline {5}Conclusions}{38}{chapter.5}
 \contentsline {chapter}{References}{41}{section*.22}
 \contentsline {chapter}{Appendix \numberline {A}Sample Appendix}{41}{Appendix.1.A}
