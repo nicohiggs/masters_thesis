@@ -1,0 +1,199 @@
+\begin{thebibliography}{10}
+
+\bibitem{Agnew1994}
+G.~A. Agnew and A.~V. Carron.
+\newblock Crowd effects and the home advantage.
+\newblock {\em International Journal of Sport Psychology}, 25(1):53--62, 1994.
+
+\bibitem{GlickmanText2017}
+Jim Albert, Mark~E. Glickman, Tim~B. Swartz, and Ruud~H. Koning.
+\newblock {\em Handbook of Statistical Methods and Analyses in Sports}.
+\newblock Taylor and Francis Group, LLC, 2017.
+
+\bibitem{Baio2010}
+Gianluca Baio and Marta Blangiardo.
+\newblock Bayesian hierarchical model for the prediction of football results.
+\newblock {\em Journal of Applied Statistics}, 37(2):253--264, 2010.
+
+\bibitem{Benz2020}
+Luke~S. Benz and Michael~J. Lopez.
+\newblock Estimating the change in soccer's home advantage during the covid-19
+  pandemic using bivariate poisson regression.
+\newblock {\em arXiv}, (1977):1--23, 2020.
+
+\bibitem{Betancourt2017}
+Michael {Betancourt}.
+\newblock {A Conceptual Introduction to Hamiltonian Monte Carlo}.
+\newblock {\em arXiv e-prints}, page arXiv:1701.02434, January 2017.
+
+\bibitem{Bradley1952}
+Ralph~Allan Bradley and Milton~E. Terry.
+\newblock Rank analysis of incomplete block designs: I. the method of paired
+  comparisons.
+\newblock {\em Biometrika}, 39(3/4):324, 1952.
+
+\bibitem{Brooks1997}
+S.~P. Brooks and A.~Gelman.
+\newblock General methods for monitoring convergence of iterative simulations.
+\newblock {\em Journal of Computational and Graphical Statistics}, 7:434--455,
+  1997.
+
+\bibitem{Buraimo2010}
+B.~Buraimo, D.~Forrest, and R.~Simmons.
+\newblock The 12th man?: refereeing bias in english and german soccer.
+\newblock {\em Journal of the Royal Statistical Society: Series A},
+  173(2):431--449, 2010.
+
+\bibitem{Cameron1990}
+A.C. Cameron and P.~K. Trivedi.
+\newblock Regression-based tests for overdispersion in the poisson model.
+\newblock {\em Journal of Econometrics}, 46:347--364, 1990.
+
+\bibitem{Carron2005}
+Albert~V. Carron, Todd~M. Loughhead, and Steven~R. Bray.
+\newblock The home advantage in sport competitions: Courneya and carron's
+  (1992) conceptual framework a decade later.
+\newblock {\em Journal of Sports Sciences}, 23(4):395--407, 2005.
+
+\bibitem{nhl2020}
+Nicholas~J. Costonika.
+\newblock Nhl postseason bubbles successful because 'everybody bought into
+  this'.
+\newblock {\em NHL.com}, 2020.
+
+\bibitem{Courneya1992}
+Kerry~S. Courneya and Albert~V. Carron.
+\newblock The home advantage in sport competitions: A literature review.
+\newblock {\em Journal of Sport and Exercise Psychology}, 14(1):13--27, 1992.
+
+\bibitem{Dohmen2016}
+T.~Dohmen and J.~Sauerman.
+\newblock Referee bias.
+\newblock {\em Journal of Economic Surveys}, 30(4):679--695, 2016.
+
+\bibitem{Forrest2005}
+D.~Forrest, J.~Beaumont, J.~Goddard, and R.~Simmons.
+\newblock Home advantage and the debate about competitive balance in
+  professional sports leagues.
+\newblock {\em Journal of Sports Sciences}, 23(4):439--445, 2005.
+
+\bibitem{Garicano2005}
+L.~Garicano, I.~Palacios-Huerta, and C.~Prendergast.
+\newblock Favoritism under social pressure.
+\newblock {\em Review of Economics and Statistics}, 87(2):208--216, 2005.
+
+\bibitem{Gelman1992}
+A.~Gelman and D.~B. Rubin.
+\newblock Inference from iterative simulation using multiple sequences.
+\newblock {\em Statistical Science}, 7:457--511, 1992.
+
+\bibitem{Gelman2014}
+Andrew Gelman, John~B. Carlin, Hal~S. Stern, David~B. Dunson, Aki Vehtari, and
+  Donald~B. Rubin.
+\newblock {\em Bayesian Data Analysis: Third Edition}.
+\newblock Taylor and Francis Group, LLC, 2014.
+
+\bibitem{Gelman2006}
+Andrew Gelman and Jennifer Hill.
+\newblock {\em Data Analysis Using Regression and Multilevel/Hierarchical
+  Models}.
+\newblock Cambridge University Press, 2006.
+
+\bibitem{Glickman1998}
+Mark~E. Glickman and Hal~S. Stern.
+\newblock A state-space model for national football league scores.
+\newblock {\em Journal of the American Statistical Association},
+  93(441):25--35, 1998.
+
+\bibitem{Gomez2011}
+Miguel~A. G{\'{o}}mez, Richard Pollard, and Juan~Carlos Luis-Pascual.
+\newblock Comparison of the home advantage in nine different professional team
+  sports in spain.
+\newblock {\em Perceptual and Motor Skills}, 113(1):150--156, 2011.
+
+\bibitem{Hall2020}
+Meghan Hall.
+\newblock Examining the effect of the last change in hockey, 2020.
+\newblock \url{http://meghan.rbind.io/post/last-change/}.
+
+\bibitem{Karlis2003}
+D.~Karlis and Ntzoufras I.
+\newblock Analysis of sports data by using bivariate poisson models.
+\newblock {\em Journal of the Roayal Statistical Society: Series D},
+  52(3):381--393, 2003.
+
+\bibitem{Lopez2018}
+Michael~J. Lopez, Gregory~J. Matthews, and Benjamin~S. Baumer.
+\newblock How often does the best team win? a unified approach to understanding
+  randomness in north american sport.
+\newblock {\em Annals of Applied Statistics}, 12(4):2483--2516, 2018.
+
+\bibitem{McElreath2020}
+Richard McElreath.
+\newblock {\em Statistical Rethinking}.
+\newblock Chapman and Hall, 2020.
+
+\bibitem{McHill2020}
+Andrew~W. McHill and Evan~D. Chinoy.
+\newblock Utilizing the national basketball association's covid-19 restart
+  “bubble” to uncover the impact of travel and circadian disruption on
+  athletic performance.
+\newblock {\em Scientific Reports}, 10(1), 2020.
+
+\bibitem{Moskowitz2012}
+T.~Moskowitz and L.~J. Werheim.
+\newblock Scorecasting: The hidden influences behind how sports are played and
+  games are won.
+\newblock {\em Three Rivers Press (CA)}, 2012.
+
+\bibitem{Nevill1999}
+A.~M. Nevill and R.~L. Holder.
+\newblock Home advantage in sport.
+\newblock {\em Sports Medicine}, 28(4):221--236, 1999.
+
+\bibitem{Payne2018}
+E.~H. Payne, M.~Gebregziabher, J.~W. Hardin, V.~Ramakrishnan, and L.~E. Egede.
+\newblock An empirical approach to determine a threshold for assessing
+  overdispersion in poisson and negative binomial models for count data.
+\newblock {\em Commun Stat Simul Comput.}, 47(6):1722--1738, 2018.
+
+\bibitem{Pollard2005a}
+R.~Pollard and G.~Pollard.
+\newblock Long-term trends in home advantage in professional team sports in
+  north america and england (1876-2003).
+\newblock {\em Journal of Sports Sciences}, 23(4):337--350, 2005.
+
+\bibitem{pymc3}
+J.~Salvatier, T.~V. Wiecki, and C.~Fonnesbeck.
+\newblock Probabilistic programming in python using pymc3.
+\newblock {\em Peer J Computer Science}, 2, 2016.
+
+\bibitem{Schwartz1977}
+Barry Schwartz and Stephen~F. Barsky.
+\newblock {The Home Advantage}.
+\newblock {\em Social Forces}, 55(3):641--661, 1977.
+
+\bibitem{Unkelbach2010}
+C.~Unkelbach and D.~Memmert.
+\newblock Crowd noise as a cue in referee decisions contributes to the home
+  advantage.
+\newblock {\em Journal of Sport and Exercise Psychology}, 32(4):483--498, 2010.
+
+\bibitem{Vehtari2016}
+A.~Vehtari, A.~Gelman, and J.~Gabry.
+\newblock Practical bayesian model evaluation using leave-one-out
+  cross-validation and waic.
+\newblock {\em Statistics and Computing}, 27:1413--1432, 2016.
+
+\bibitem{Watanabe2010}
+Sumio Watanabe.
+\newblock Asymptotic equivalence of bayes cross validation and widely
+  applicable information criterion in singular learning theory.
+\newblock {\em Journal of Machine Learning Research}, 11:3571--3594, 2010.
+
+\bibitem{usatoday2020}
+Jeff Zillgitt.
+\newblock Meet the eight key figures who helped make the nba bubble a success.
+\newblock {\em USA Today}, 2020.
+
+\end{thebibliography}

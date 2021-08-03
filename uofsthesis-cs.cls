@@ -846,7 +846,7 @@ Saskatoon, Saskatchewan S7N 5C9 Canada
 \addcontentsline{toc}{chapter}{References}
 
 \bibliographystyle{#1}
-\bibliography{#2}  
+\bibliography{#2}
 }
 }
 

@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: thesis_template.aux
+The style file: plain.bst
+Database file #1: habib.bib
+Warning--there's a number but no volume in Benz2020
+You've used 35 entries,
+            2118 wiz_defined-function locations,
+            734 strings with 9712 characters,
+and the built_in function-call counts, 11331 in all, are:
+= -- 1148
+> -- 509
+< -- 1
++ -- 204
+- -- 164
+* -- 805
+:= -- 1904
+add.period$ -- 105
+call.type$ -- 35
+change.case$ -- 183
+chr.to.int$ -- 0
+cite$ -- 36
+duplicate$ -- 413
+empty$ -- 871
+format.name$ -- 164
+if$ -- 2323
+int.to.chr$ -- 0
+int.to.str$ -- 35
+missing$ -- 38
+newline$ -- 178
+num.names$ -- 70
+pop$ -- 158
+preamble$ -- 1
+purify$ -- 152
+quote$ -- 0
+skip$ -- 305
+stack$ -- 0
+substring$ -- 793
+swap$ -- 68
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 132
+warning$ -- 1
+while$ -- 118
+width$ -- 37
+write$ -- 379
+(There was 1 warning)
