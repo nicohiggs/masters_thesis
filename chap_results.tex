@@ -7,7 +7,7 @@ This chapter presents the results of the data experiments introduced and explain
 	\subfloat[NBA]{\includegraphics[width=0.5\textwidth]{figures/logscore_NBA.pdf}} \\
 	\subfloat[MLB]{\includegraphics[width=0.5\textwidth]{figures/logscore_MLB.pdf}} 
 	\subfloat[NFL]{\includegraphics[width=0.5\textwidth]{figures/logscore_NFL.pdf}}
-	\caption{Comparison of models via their Log-Score on train and test sets, as well as the PSIS-LOO estimated Log-Score, for each league. The complete-pooling model underfits, the no-pooling model overfits, and the partial-pooling model provides the best tradeoff in fitting the data while protecting against overfitting. The PSIS-LOO estimates consistently predict how the models would rank on an unseen test-set.}
+	\caption{Comparison of models via their Log-Score (higher is better) on train and test sets, as well as the PSIS-LOO estimated Log-Score, for each league. The complete-pooling model underfits, the no-pooling model overfits, and the partial-pooling model provides the best tradeoff in fitting the data while protecting against overfitting. The PSIS-LOO estimates consistently predict how the models would rank on an unseen test-set.}
 	\label{fig:log_scores}
 \end{figure}
 
@@ -85,8 +85,6 @@ NFL & 4.56 & NB & -9841.7 & 133.0 & 22.1\\
 
 \subsection{Inferring Home Advantage}
 
-- similar to paper
-
 \begin{figure}
 	\centering
 	\includegraphics[width=0.9\textwidth]{figures/Figure_1.pdf}
@@ -118,3 +116,21 @@ In summary, results for pooled (Figure~\mbox{\ref{fig:ha_pooled}}) and individua
 	\caption{Distributions of the estimated home advantage for the NHL, NBA, MLB, and NFL over the past 5 seasons from 2016-2020. Home advantage for playoffs are reported for NHL and NBA because that is when their COVID restricted games took place. Home advantage for regular season is reported for MLB and NFL as their respective playoff seasons are too small for stable results. Red distributions represent COVID-19 bubble adjusted seasons.}
 	\label{fig:ha_main}
 \end{figure}
+
+\begin{table}
+	\centering
+	\begin{tabular}{c@{\hskip0.35in}c@{\hskip0.35in}c@{\hskip 0.35in}c}
+		\toprule
+		& \boldmath$P(\beta_{20} < 0)$ & \boldmath$P(\beta_{20} < \bar{\beta}_{16-19})$ & \boldmath$P(\beta_{20} < \bar{\beta}_{19})$ \\
+		\midrule
+		NHL&prob&prob&prob \\
+		\midrule
+		NBA&prob&prob&prob \\
+		\midrule
+		MLB&prob&prob&prob \\
+		\midrule
+		NFL&prob&prob&prob \\
+		\bottomrule
+	\end{tabular}
+	\caption{The estimated probabilities that the home advantage parameter during the 2020 COVID-19 restricted games ($\beta_{20}$) is less than 0, the previous four seasons (2016-2019) mean ($\bar{\beta}_{16-19}$), and the previous seasons (2019) mean ($\bar{\beta}_{19}$).}\label{tab:ha_probs}
+\end{table}

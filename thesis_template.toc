@@ -29,7 +29,7 @@
 \contentsline {section}{\numberline {4.1}Complete pooling, No pooling, Partial pooling}{29}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Negative Binomial Regression}{32}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Inferring Home Advantage}{32}{subsection.4.1.2}
-\contentsline {chapter}{\numberline {5}Conclusions}{38}{chapter.5}
-\contentsline {chapter}{References}{41}{section*.22}
-\contentsline {chapter}{Appendix \numberline {A}Sample Appendix}{43}{Appendix.1.A}
-\contentsline {chapter}{Appendix \numberline {B}Another Sample Appendix}{44}{Appendix.1.B}
+\contentsline {chapter}{\numberline {5}Conclusions}{39}{chapter.5}
+\contentsline {chapter}{References}{42}{section*.23}
+\contentsline {chapter}{Appendix \numberline {A}Sample Appendix}{44}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {B}Another Sample Appendix}{45}{Appendix.1.B}

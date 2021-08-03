@@ -9,7 +9,7 @@
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{17}{subfigure.1.6}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison of models via their Log-Score on train and test sets, as well as the PSIS-LOO estimated Log-Score, for each league. The complete-pooling model underfits, the no-pooling model overfits, and the partial-pooling model provides the best tradeoff in fitting the data while protecting against overfitting. The PSIS-LOO estimates consistently predict how the models would rank on an unseen test-set.\relax }}{30}{figure.caption.16}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison of models via their Log-Score (higher is better) on train and test sets, as well as the PSIS-LOO estimated Log-Score, for each league. The complete-pooling model underfits, the no-pooling model overfits, and the partial-pooling model provides the best tradeoff in fitting the data while protecting against overfitting. The PSIS-LOO estimates consistently predict how the models would rank on an unseen test-set.\relax }}{30}{figure.caption.16}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {NHL}}}{30}{subfigure.1.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {NBA}}}{30}{subfigure.1.2}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {MLB}}}{30}{subfigure.1.3}
