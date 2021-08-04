@@ -46,7 +46,7 @@ The PSIS-LOO estimates of out-of-sample performance consistently ranked the mode
 \end{figure}
 \end{comment}
 
-\subsection{Negative Binomial Regression}
+\section{Negative Binomial Regression}
 
 \begin{figure}
 	\centering
@@ -83,7 +83,7 @@ NFL & 4.56 & NB & -9841.7 & 133.0 & 22.1\\
 \caption{Comparison of estimated negative log-likelihood of leave-one-out cross-validation (LOO) for each model across each league. The differences between the Poisson, Negative Binomial (NB), and Normal models are reported relative to the best fitting model (dLOO) for each league; along with the standard error of the estimated differences (dSE). The dispersion statistic, \(\sigma_p\), indicates how much greater the variance is than the mean for point totals in each league and signals overdispersion when \(\sigma_p > 2\). The NB model noticeably outperforms the Poisson model for leagues with greater overdispersion (MLB and NFL) while being nearly identical for leagues with little to no overdispersion (NHL and NBA). The NB model also outperforms the Normal model in each league except the NFL where they are close to one another while both vastly outperforming the Poisson model.}\label{tab:loo}
 \end{table}
 
-\subsection{Inferring Home Advantage}
+\section{Inferring Home Advantage}
 
 \begin{figure}
 	\centering
@@ -94,7 +94,7 @@ NFL & 4.56 & NB & -9841.7 & 133.0 & 22.1\\
 
 The distributions for the estimates of the home advantage parameters from pooling the previous four pre-COVID-19 seasons/playoffs together can be seen in Figure \mbox{\ref{fig:ha_pooled}} with the COVID-19 restricted season/playoffs coloured red. The peaks of these distributions represent the most likely values for the home advantage parameter and their width represents the uncertainty in these estimates. We can use these distributions to directly measure the probability the home advantage parameter is less than the previous seasons. The leftward shift of the distribution for the COVID-19 restricted season/playoffs suggests that home advantage decreased in the NHL, NBA, and NFL while not changing for the MLB.
 
-Figure \mbox{\ref{fig:ha_main}} shows results from estimating home advantage individually for each prior season. This more granular view of pre-COVID-19 home advantage reveals greater season-to-season variation in home advantage that is missing in Figure \mbox{\ref{fig:ha_pooled}}. Nevertheless, the year-over-year estimates in Figure \mbox{\ref{fig:ha_main}} show the results of reduced home advantage in COVID-19 restricted season/playoffs holding for the NHL, NFL, and NBA, albeit with a single past season with lower home advantage in both the NFL and NBA. The remainder of this section examines these estimated distributions and their implications.
+Figure \mbox{\ref{fig:ha_main}} shows results from estimating home advantage individually for each prior season. This more granular view of pre-COVID-19 home advantage reveals greater season-to-season variation in home advantage that is missing in Figure \mbox{\ref{fig:ha_pooled}}. Nevertheless, the year-over-year estimates in Figure \mbox{\ref{fig:ha_main}} show the results of reduced home advantage in COVID-19 restricted season/playoffs holding for the NHL, NFL, and NBA, albeit with a single past season with lower home advantage in both the NFL and NBA. A table of the estimated probabilities of the home advantage parameter being less than 0, the previous seasons grouped together, and the previous seasons individually can be seen in Table \ref{tab:ha_probs}. The remainder of this section examines these estimated distributions and their implications.
 
 For the NHL and NBA data, Figures \mbox{\ref{fig:ha_pooled}} and \mbox{\ref{fig:ha_main}} and our analysis focus on their playoff seasons because the NHL and NBA COVID-19 seasons only took place during their playoff seasons. In contrast, the MLB and NFL had COVID-19 restrictions for their entire seasons, therefore, Figures \mbox{\ref{fig:ha_pooled}} and \mbox{\ref{fig:ha_main}}, and our analysis for those leagues are focused on their regular season games. Focusing on the MLB and NFL regular seasons is not only convenient but arguably necessary as their playoff seasons consist of much fewer games than the NHL and NBA playoff seasons, resulting in high uncertainty of parameter estimates. The NHL and NBA regular season results as well as the MLB and NFL playoff results are provided in the supplementary materials.
 
@@ -116,21 +116,3 @@ In summary, results for pooled (Figure~\mbox{\ref{fig:ha_pooled}}) and individua
 	\caption{Distributions of the estimated home advantage for the NHL, NBA, MLB, and NFL over the past 5 seasons from 2016-2020. Home advantage for playoffs are reported for NHL and NBA because that is when their COVID restricted games took place. Home advantage for regular season is reported for MLB and NFL as their respective playoff seasons are too small for stable results. Red distributions represent COVID-19 bubble adjusted seasons.}
 	\label{fig:ha_main}
 \end{figure}
-
-\begin{table}
-	\centering
-	\begin{tabular}{c@{\hskip0.35in}c@{\hskip0.35in}c@{\hskip 0.35in}c}
-		\toprule
-		& \boldmath$P(\beta_{20} < 0)$ & \boldmath$P(\beta_{20} < \bar{\beta}_{16-19})$ & \boldmath$P(\beta_{20} < \bar{\beta}_{19})$ \\
-		\midrule
-		NHL&prob&prob&prob \\
-		\midrule
-		NBA&prob&prob&prob \\
-		\midrule
-		MLB&prob&prob&prob \\
-		\midrule
-		NFL&prob&prob&prob \\
-		\bottomrule
-	\end{tabular}
-	\caption{The estimated probabilities that the home advantage parameter during the 2020 COVID-19 restricted games ($\beta_{20}$) is less than 0, the previous four seasons (2016-2019) mean ($\bar{\beta}_{16-19}$), and the previous seasons (2019) mean ($\bar{\beta}_{19}$).}\label{tab:ha_probs}
-\end{table}
