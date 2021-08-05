@@ -21,13 +21,13 @@
 \contentsline {subsection}{\numberline {3.1.1}Model Fit in PyMC3}{28}{subsection.3.1.1}
 \contentsline {section}{\numberline {3.2}Data Experiments}{29}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Complete pooling, No pooling, and Partial pooling}{29}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Negative Binomial Regression}{31}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}Negative Binomial Regression}{30}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Inferring Home Advantage}{31}{subsection.3.2.3}
-\contentsline {chapter}{\numberline {4}Results}{33}{chapter.4}
-\contentsline {section}{\numberline {4.1}Complete pooling, No pooling, Partial pooling}{33}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Negative Binomial Regression}{36}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Inferring Home Advantage}{36}{subsection.4.1.2}
-\contentsline {chapter}{\numberline {5}Conclusions}{42}{chapter.5}
-\contentsline {chapter}{References}{45}{section*.24}
-\contentsline {chapter}{Appendix \numberline {A}Appendix}{48}{Appendix.1.A}
-\contentsline {chapter}{Appendix \numberline {B}Another Sample Appendix}{49}{Appendix.1.B}
+\contentsline {chapter}{\numberline {4}Results}{32}{chapter.4}
+\contentsline {section}{\numberline {4.1}Complete pooling, No pooling, Partial pooling}{32}{section.4.1}
+\contentsline {section}{\numberline {4.2}Negative Binomial Regression}{35}{section.4.2}
+\contentsline {section}{\numberline {4.3}Inferring Home Advantage}{35}{section.4.3}
+\contentsline {chapter}{\numberline {5}Conclusions}{41}{chapter.5}
+\contentsline {chapter}{References}{44}{section*.24}
+\contentsline {chapter}{Appendix \numberline {A}Appendix}{47}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {B}Another Sample Appendix}{48}{Appendix.1.B}

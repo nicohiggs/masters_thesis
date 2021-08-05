@@ -3,46 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: thesis_template.aux
 The style file: plain.bst
 Database file #1: habib.bib
-Warning--there's a number but no volume in Benz2020
-You've used 51 entries,
+You've used 56 entries,
             2118 wiz_defined-function locations,
-            836 strings with 11804 characters,
-and the built_in function-call counts, 15767 in all, are:
-= -- 1593
-> -- 666
-< -- 1
-+ -- 271
-- -- 212
-* -- 1087
-:= -- 2654
-add.period$ -- 153
-call.type$ -- 51
-change.case$ -- 251
+            864 strings with 12462 characters,
+and the built_in function-call counts, 17210 in all, are:
+= -- 1717
+> -- 752
+< -- 2
++ -- 309
+- -- 242
+* -- 1168
+:= -- 2910
+add.period$ -- 168
+call.type$ -- 56
+change.case$ -- 277
 chr.to.int$ -- 0
-cite$ -- 52
-duplicate$ -- 584
-empty$ -- 1263
-format.name$ -- 212
-if$ -- 3239
+cite$ -- 56
+duplicate$ -- 647
+empty$ -- 1372
+format.name$ -- 242
+if$ -- 3535
 int.to.chr$ -- 0
-int.to.str$ -- 51
-missing$ -- 56
-newline$ -- 258
-num.names$ -- 102
-pop$ -- 236
+int.to.str$ -- 56
+missing$ -- 65
+newline$ -- 283
+num.names$ -- 112
+pop$ -- 281
 preamble$ -- 1
-purify$ -- 208
+purify$ -- 233
 quote$ -- 0
-skip$ -- 418
+skip$ -- 458
 stack$ -- 0
-substring$ -- 1104
-swap$ -- 84
-text.length$ -- 1
+substring$ -- 1135
+swap$ -- 94
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 188
-warning$ -- 1
-while$ -- 168
-width$ -- 53
-write$ -- 549
-(There was 1 warning)
+type$ -- 200
+warning$ -- 0
+while$ -- 179
+width$ -- 58
+write$ -- 600

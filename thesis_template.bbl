@@ -30,7 +30,7 @@ C.~G. Begley and J.~P.~A. Ioannidis.
 Luke~S. Benz and Michael~J. Lopez.
 \newblock Estimating the change in soccer's home advantage during the covid-19
   pandemic using bivariate poisson regression.
-\newblock {\em arXiv}, (1977):1--23, 2020.
+\newblock {\em arXiv}, pages 1--23, 2020.
 
 \bibitem{Betancourt2017}
 Michael {Betancourt}.
@@ -93,6 +93,12 @@ Nicholas~J. Costonika.
 Kerry~S. Courneya and Albert~V. Carron.
 \newblock The home advantage in sport competitions: A literature review.
 \newblock {\em Journal of Sport and Exercise Psychology}, 14(1):13--27, 1992.
+
+\bibitem{David1998}
+F.N. David.
+\newblock {\em Games, Gods \& Gambling: A History of Probability and
+  Statistical Ideas}.
+\newblock Dover Publications, 1998.
 
 \bibitem{Dohmen2016}
 T.~Dohmen and J.~Sauerman.
@@ -195,6 +201,11 @@ Richard McElreath.
 \newblock {\em Statistical Rethinking}.
 \newblock Chapman and Hall, 2020.
 
+\bibitem{McGrayne2011}
+S.B. McGrayne.
+\newblock {\em The Theory That Would Not Die}.
+\newblock Yale University Press, 2011.
+
 \bibitem{McHill2020}
 Andrew~W. McHill and Evan~D. Chinoy.
 \newblock Utilizing the national basketball association's covid-19 restart
@@ -206,6 +217,11 @@ Andrew~W. McHill and Evan~D. Chinoy.
 N.~Metropolis, A.~W. Rosenbluth, M.~N. Rosenbluth, A.~H. Teller, and E.~Teller.
 \newblock Equation of state calculations by fast computing machines.
 \newblock {\em Journal of Chemical Physics}, 21(6):1087--1092, 1953.
+
+\bibitem{Moivre1718}
+A.~Moivre.
+\newblock {\em The Doctrine of Chances}.
+\newblock W. Pearson, 1718.
 
 \bibitem{Moskowitz2012}
 T.~Moskowitz and L.~J. Werheim.
@@ -245,6 +261,12 @@ J.~Salvatier, T.~V. Wiecki, and C.~Fonnesbeck.
 \newblock Probabilistic programming in python using pymc3.
 \newblock {\em Peer J Computer Science}, 2, 2016.
 
+\bibitem{Schoot2021}
+R.~Schoot, S.~Depaoli, R.~King, B.~Kramer, K.~Martens, T.G. Mahlet,
+  M.~Vannucci, A.~Gelman, D.~Veen, J.~Willemsen, and C.~Yau.
+\newblock Bayesian statistics and modelling.
+\newblock {\em Nature Reviews Methods Primers}, 1(1 (2021)), 2021.
+
 \bibitem{Schwartz1977}
 Barry Schwartz and Stephen~F. Barsky.
 \newblock {The Home Advantage}.
@@ -254,6 +276,12 @@ Barry Schwartz and Stephen~F. Barsky.
 Claude~E. Shannon.
 \newblock A mathematical theory of communication.
 \newblock {\em Bell System Technical Journal}, 27(3):379--423, 1948.
+
+\bibitem{Stigler1986}
+S.M. Stigler.
+\newblock {\em The History of Statistics: The Measurement of Uncertainty before
+  1900}.
+\newblock Harvard University Press, 1986.
 
 \bibitem{pymc32018}
 PyMC~Development Team.
