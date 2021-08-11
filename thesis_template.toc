@@ -5,29 +5,30 @@
 \contentsline {chapter}{List of Tables}{vii}{section*.9}
 \contentsline {chapter}{List of Figures}{viii}{section*.10}
 \contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
-\contentsline {subsection}{\numberline {1.0.1}Contribution}{3}{subsection.1.0.1}
-\contentsline {chapter}{\numberline {2}Background}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Related Work}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Bayesian Inference}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Introduction}{7}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Multilevel Modelling}{9}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Markov Chain Monte Carlo}{13}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Hamiltonian Monte Carlo}{17}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Model Evaluation and Selection}{19}{subsection.2.2.5}
-\contentsline {subsubsection}{Cross Validation, Information Criterion, and Beyond}{19}{subsubsection*.15}
-\contentsline {subsubsection}{Posterior Predictive Checks}{25}{subsubsection*.17}
-\contentsline {chapter}{\numberline {3}Methods}{26}{chapter.3}
-\contentsline {section}{\numberline {3.1}Multilevel Model}{26}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Model Fit in PyMC3}{28}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Data Experiments}{29}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Complete pooling, No pooling, and Partial pooling}{29}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Negative Binomial Regression}{30}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Inferring Home Advantage}{31}{subsection.3.2.3}
-\contentsline {chapter}{\numberline {4}Results}{32}{chapter.4}
-\contentsline {section}{\numberline {4.1}Complete pooling, No pooling, Partial pooling}{32}{section.4.1}
-\contentsline {section}{\numberline {4.2}Negative Binomial Regression}{35}{section.4.2}
-\contentsline {section}{\numberline {4.3}Inferring Home Advantage}{35}{section.4.3}
-\contentsline {chapter}{\numberline {5}Conclusions}{41}{chapter.5}
-\contentsline {chapter}{References}{44}{section*.24}
-\contentsline {chapter}{Appendix \numberline {A}Appendix}{47}{Appendix.1.A}
-\contentsline {chapter}{Appendix \numberline {B}Another Sample Appendix}{48}{Appendix.1.B}
+\contentsline {section}{\numberline {1.1}Contribution}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Thesis Organization}{4}{section.1.2}
+\contentsline {chapter}{\numberline {2}Background on Bayesian Inference}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Multilevel Modelling}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}Markov Chain Monte Carlo}{11}{section.2.3}
+\contentsline {section}{\numberline {2.4}Hamiltonian Monte Carlo}{15}{section.2.4}
+\contentsline {section}{\numberline {2.5}Model Evaluation and Selection}{17}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Cross Validation, Information Criterion, and Beyond}{18}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Posterior Predictive Checks}{23}{subsection.2.5.2}
+\contentsline {chapter}{\numberline {3}Related Work on Sports Analytics}{25}{chapter.3}
+\contentsline {chapter}{\numberline {4}Methods}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}Multilevel Model}{27}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Model Fit in PyMC3}{29}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Experiments}{30}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Data}{30}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Complete pooling, No pooling, and Partial pooling}{32}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Negative Binomial Regression}{33}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Inferring Home Advantage}{34}{subsection.4.2.4}
+\contentsline {chapter}{\numberline {5}Results}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}Complete pooling, No pooling, Partial pooling}{35}{section.5.1}
+\contentsline {section}{\numberline {5.2}Negative Binomial Regression}{38}{section.5.2}
+\contentsline {section}{\numberline {5.3}Inferring Home Advantage}{38}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclusions}{44}{chapter.6}
+\contentsline {chapter}{References}{47}{section*.22}
+\contentsline {chapter}{Appendix \numberline {A}Appendix}{50}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {B}Another Sample Appendix}{51}{Appendix.1.B}

@@ -5,27 +5,30 @@
 \BOOKMARK [0][-]{section*.9}{List of Tables}{}% 5
 \BOOKMARK [0][-]{section*.10}{List of Figures}{}% 6
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 7
-\BOOKMARK [1][-]{subsection.1.0.1}{Contribution}{chapter.1}% 8
-\BOOKMARK [0][-]{chapter.2}{Background}{}% 9
-\BOOKMARK [1][-]{section.2.1}{Related Work}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.2}{Bayesian Inference}{chapter.2}% 11
-\BOOKMARK [2][-]{subsection.2.2.1}{Introduction}{section.2.2}% 12
-\BOOKMARK [2][-]{subsection.2.2.2}{Multilevel Modelling}{section.2.2}% 13
-\BOOKMARK [2][-]{subsection.2.2.3}{Markov Chain Monte Carlo}{section.2.2}% 14
-\BOOKMARK [2][-]{subsection.2.2.4}{Hamiltonian Monte Carlo}{section.2.2}% 15
-\BOOKMARK [2][-]{subsection.2.2.5}{Model Evaluation and Selection}{section.2.2}% 16
-\BOOKMARK [0][-]{chapter.3}{Methods}{}% 17
-\BOOKMARK [1][-]{section.3.1}{Multilevel Model}{chapter.3}% 18
-\BOOKMARK [2][-]{subsection.3.1.1}{Model Fit in PyMC3}{section.3.1}% 19
-\BOOKMARK [1][-]{section.3.2}{Data Experiments}{chapter.3}% 20
-\BOOKMARK [2][-]{subsection.3.2.1}{Complete pooling, No pooling, and Partial pooling}{section.3.2}% 21
-\BOOKMARK [2][-]{subsection.3.2.2}{Negative Binomial Regression}{section.3.2}% 22
-\BOOKMARK [2][-]{subsection.3.2.3}{Inferring Home Advantage}{section.3.2}% 23
-\BOOKMARK [0][-]{chapter.4}{Results}{}% 24
-\BOOKMARK [1][-]{section.4.1}{Complete pooling, No pooling, Partial pooling}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.2}{Negative Binomial Regression}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.3}{Inferring Home Advantage}{chapter.4}% 27
-\BOOKMARK [0][-]{chapter.5}{Conclusions}{}% 28
-\BOOKMARK [0][-]{section*.24}{References}{}% 29
-\BOOKMARK [0][-]{Appendix.1.A}{Appendix Appendix}{}% 30
-\BOOKMARK [0][-]{Appendix.1.B}{Appendix Another Sample Appendix}{}% 31
+\BOOKMARK [1][-]{section.1.1}{Contribution}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.2}{Thesis Organization}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter.2}{Background on Bayesian Inference}{}% 10
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.2}{Multilevel Modelling}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Markov Chain Monte Carlo}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.4}{Hamiltonian Monte Carlo}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.5}{Model Evaluation and Selection}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.5.1}{Cross Validation, Information Criterion, and Beyond}{section.2.5}% 16
+\BOOKMARK [2][-]{subsection.2.5.2}{Posterior Predictive Checks}{section.2.5}% 17
+\BOOKMARK [0][-]{chapter.3}{Related Work on Sports Analytics}{}% 18
+\BOOKMARK [0][-]{chapter.4}{Methods}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Multilevel Model}{chapter.4}% 20
+\BOOKMARK [2][-]{subsection.4.1.1}{Model Fit in PyMC3}{section.4.1}% 21
+\BOOKMARK [1][-]{section.4.2}{Experiments}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.2.1}{Data}{section.4.2}% 23
+\BOOKMARK [2][-]{subsection.4.2.2}{Complete pooling, No pooling, and Partial pooling}{section.4.2}% 24
+\BOOKMARK [2][-]{subsection.4.2.3}{Negative Binomial Regression}{section.4.2}% 25
+\BOOKMARK [2][-]{subsection.4.2.4}{Inferring Home Advantage}{section.4.2}% 26
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 27
+\BOOKMARK [1][-]{section.5.1}{Complete pooling, No pooling, Partial pooling}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.2}{Negative Binomial Regression}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.3}{Inferring Home Advantage}{chapter.5}% 30
+\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 31
+\BOOKMARK [0][-]{section*.22}{References}{}% 32
+\BOOKMARK [0][-]{Appendix.1.A}{Appendix Appendix}{}% 33
+\BOOKMARK [0][-]{Appendix.1.B}{Appendix Another Sample Appendix}{}% 34

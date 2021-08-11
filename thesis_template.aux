@@ -38,6 +38,9 @@
 \citation{Benz2020}
 \citation{Benz2020}
 \citation{McHill2020}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
 \citation{nhl2020}
 \citation{usatoday2020}
 \citation{Unkelbach2010}
@@ -48,10 +51,101 @@
 \citation{Garicano2005}
 \citation{Moskowitz2012}
 \citation{McHill2020}
-\@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Contribution}{3}{section.1.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Thesis Organization}{4}{section.1.2}}
+\citation{David1998}
+\citation{Moivre1718}
+\citation{Stigler1986}
+\citation{Schoot2021}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Background on Bayesian Inference}{5}{chapter.2}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.0.1}Contribution}{3}{subsection.1.0.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}}
+\newlabel{eq:orig_bayes_theorem}{{2.1}{5}{Introduction}{equation.2.1.1}{}}
+\citation{Schoot2021}
+\citation{McGrayne2011}
+\citation{Ioannidis2005}
+\citation{Begley2015}
+\citation{Box1976}
+\newlabel{eq:new_bayes_theorem}{{2.2}{6}{Introduction}{equation.2.1.2}{}}
+\newlabel{eq:proportional_bayes_theorem}{{2.3}{6}{Introduction}{equation.2.1.3}{}}
+\citation{Schoot2021}
+\newlabel{eq:normalization_factor}{{2.4}{7}{Introduction}{equation.2.1.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Multilevel Modelling}{7}{section.2.2}}
+\newlabel{Multilevel_Modelling}{{2.2}{7}{Multilevel Modelling}{section.2.2}{}}
+\citation{Gelman2006}
+\newlabel{eq:mlm_ex}{{2.5}{8}{Multilevel Modelling}{equation.2.2.5}{}}
+\citation{Gelman2006}
+\citation{Gelman2006b}
+\citation{pymc32018}
+\citation{Gelman2006b}
+\citation{Gelman2006b}
+\citation{Gelman2014}
+\citation{Gelman2006}
+\citation{McElreath2020}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Comparison of county parameter estimates between traditional regression (no pooling) and multilevel regression (partial pooling). Notice how the partial pooling estimates "shrink toward the mean". Further note how this shrinkage is greater for the counties with fewer observations and lesser for counties with more observations.\relax }}{9}{figure.caption.12}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:radon_example}{{2.1}{9}{Comparison of county parameter estimates between traditional regression (no pooling) and multilevel regression (partial pooling). Notice how the partial pooling estimates "shrink toward the mean". Further note how this shrinkage is greater for the counties with fewer observations and lesser for counties with more observations.\relax }{figure.caption.12}{}}
+\citation{Pearl2000}
+\citation{Gelman2006b}
+\citation{Betancourt2017}
+\citation{Betancourt2017}
+\citation{Bishop2006}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Markov Chain Monte Carlo}{11}{section.2.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Under ideal circumstances a Markov chain will first converge to the typical set (a) and then explore it efficiently (b). Unfortunately, in higher dimensions most MCMC algorithms struggle to explore the typical set and inefficiently sample a small portion (c, green). We desire algorithms that make use of the geometry of the target distribution to properly explore the typical set during sampling (d). Images are from Figures 7, 10, 11 of \cite  {Betancourt2017}. Permission to use was granted by the author under a CC BY-NC 4.0 license (https://creativecommons.org/licenses/by-nc/4.0/).\relax }}{12}{figure.caption.13}}
+\newlabel{fig:mcmc}{{2.2}{12}{Under ideal circumstances a Markov chain will first converge to the typical set (a) and then explore it efficiently (b). Unfortunately, in higher dimensions most MCMC algorithms struggle to explore the typical set and inefficiently sample a small portion (c, green). We desire algorithms that make use of the geometry of the target distribution to properly explore the typical set during sampling (d). Images are from Figures 7, 10, 11 of \cite {Betancourt2017}. Permission to use was granted by the author under a CC BY-NC 4.0 license (https://creativecommons.org/licenses/by-nc/4.0/).\relax }{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{12}{subfigure.2.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{12}{subfigure.2.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{12}{subfigure.2.3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{12}{subfigure.2.4}}
+\citation{Betancourt2017}
+\citation{Carpenter2017}
+\citation{Metropolis1953}
+\citation{Hastings1970}
+\citation{Hastings1970}
+\citation{German1984}
+\citation{Betancourt2017}
+\citation{Carpenter2017}
+\citation{Betancourt2017}
+\citation{Betancourt2017}
+\citation{Betancourt2017}
+\citation{Betancourt2017}
+\citation{Betancourt2017}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Hamiltonian Monte Carlo}{15}{section.2.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces The gradient and corresponding vector field of a probability distribution points to its mode which is often away from the typical set in higher dimensions (a). Ideally we want to twist the vector field to align with the typical set (b). The mode, gradient, and typical set of a probabilistic system are mathematically equivalent to a planet, gravitational field, and orbit in a physical system (c). Adding momentum to the system to cause a satellite to enter a stable orbit (d) is equivalent to twisting a vector field to align with the typical set of a probabilistic system. Images are from Figures 12, 13, 14, 17 of \cite  {Betancourt2017}. Permission to use was granted by the author under a CC BY-NC 4.0 license (https://creativecommons.org/licenses/by-nc/4.0/).\relax }}{16}{figure.caption.14}}
+\newlabel{fig:hmc}{{2.3}{16}{The gradient and corresponding vector field of a probability distribution points to its mode which is often away from the typical set in higher dimensions (a). Ideally we want to twist the vector field to align with the typical set (b). The mode, gradient, and typical set of a probabilistic system are mathematically equivalent to a planet, gravitational field, and orbit in a physical system (c). Adding momentum to the system to cause a satellite to enter a stable orbit (d) is equivalent to twisting a vector field to align with the typical set of a probabilistic system. Images are from Figures 12, 13, 14, 17 of \cite {Betancourt2017}. Permission to use was granted by the author under a CC BY-NC 4.0 license (https://creativecommons.org/licenses/by-nc/4.0/).\relax }{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{16}{subfigure.3.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{16}{subfigure.3.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{16}{subfigure.3.3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{16}{subfigure.3.4}}
+\citation{pymc3}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Model Evaluation and Selection}{17}{section.2.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Cross Validation, Information Criterion, and Beyond}{18}{subsection.2.5.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Example of how increasing model complexity leads to better model fit on the train-set, but can come at the cost of increasingly worse performance on the test-set. Model fit here is measured visually and in terms of mean-squared-error (MSE: lower is better) and R-squared ($R^2$: closer to 1 is better). The dataset in (a) is generated by a degree-2 polynomial with some added noise and is split into train and test sets. A degree-1 polynomial underfits the data (b). More complex polynomials improve the fit on the train-set (c, d, e). However, increasingly complex polynomials become overfit as evidenced by increasingly worse test-set performance (d, e). The overall trend of increasing model complexity, how it relates to underfitting and overfitting, and where the tradeoff is optimal is captured in (f).\relax }}{19}{figure.caption.15}}
+\newlabel{fig:overfitting_example}{{2.4}{19}{Example of how increasing model complexity leads to better model fit on the train-set, but can come at the cost of increasingly worse performance on the test-set. Model fit here is measured visually and in terms of mean-squared-error (MSE: lower is better) and R-squared ($R^2$: closer to 1 is better). The dataset in (a) is generated by a degree-2 polynomial with some added noise and is split into train and test sets. A degree-1 polynomial underfits the data (b). More complex polynomials improve the fit on the train-set (c, d, e). However, increasingly complex polynomials become overfit as evidenced by increasingly worse test-set performance (d, e). The overall trend of increasing model complexity, how it relates to underfitting and overfitting, and where the tradeoff is optimal is captured in (f).\relax }{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{19}{subfigure.4.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{19}{subfigure.4.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{19}{subfigure.4.3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{19}{subfigure.4.4}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {}}}{19}{subfigure.4.5}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {}}}{19}{subfigure.4.6}}
+\citation{Murphy2012}
+\citation{Shannon1948}
+\citation{McElreath2020}
+\citation{McElreath2020}
+\citation{McElreath2020}
+\citation{McElreath2020}
+\citation{Dunn2018}
+\newlabel{eq:log-score}{{2.8}{21}{Cross Validation, Information Criterion, and Beyond}{equation.2.5.8}{}}
+\newlabel{eq:lppd}{{2.9}{21}{Cross Validation, Information Criterion, and Beyond}{equation.2.5.9}{}}
+\citation{Akaike1974}
+\citation{Watanabe2010}
+\newlabel{eq:waic}{{2.11}{22}{Cross Validation, Information Criterion, and Beyond}{equation.2.5.11}{}}
+\citation{Vehtari2016}
+\citation{Vehtari2016}
+\newlabel{eq:psis-loo}{{2.12}{23}{Cross Validation, Information Criterion, and Beyond}{equation.2.5.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Posterior Predictive Checks}{23}{subsection.2.5.2}}
+\newlabel{ppc}{{2.5.2}{23}{Posterior Predictive Checks}{subsection.2.5.2}{}}
 \citation{Schwartz1977}
 \citation{Courneya1992}
 \citation{Carron2005}
@@ -67,10 +161,9 @@
 \citation{Ioannidis2005}
 \citation{Begley2015}
 \citation{Benz2020}
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Background}{5}{chapter.2}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Related Work on Sports Analytics}{25}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}Related Work}{5}{section.2.1}}
 \citation{Lopez2018}
 \citation{GlickmanText2017}
 \citation{Benz2020}
@@ -79,97 +172,6 @@
 \citation{Baio2010}
 \citation{Lopez2018}
 \citation{Pollard2005a}
-\citation{David1998}
-\citation{Moivre1718}
-\citation{Stigler1986}
-\citation{Schoot2021}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Bayesian Inference}{7}{section.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Introduction}{7}{subsection.2.2.1}}
-\newlabel{eq:orig_bayes_theorem}{{2.1}{7}{Introduction}{equation.2.2.1}{}}
-\newlabel{eq:new_bayes_theorem}{{2.2}{7}{Introduction}{equation.2.2.2}{}}
-\citation{Schoot2021}
-\citation{McGrayne2011}
-\citation{Ioannidis2005}
-\citation{Begley2015}
-\citation{Box1976}
-\newlabel{eq:proportional_bayes_theorem}{{2.3}{8}{Introduction}{equation.2.2.3}{}}
-\citation{Schoot2021}
-\newlabel{eq:normalization_factor}{{2.4}{9}{Introduction}{equation.2.2.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Multilevel Modelling}{9}{subsection.2.2.2}}
-\newlabel{Multilevel_Modelling}{{2.2.2}{9}{Multilevel Modelling}{subsection.2.2.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Comparison of county parameter estimates between traditional regression (no pooling) and multilevel regression (partial pooling). Notice how the partial pooling estimates "shrink toward the mean". Further note how this shrinkage is greater for the counties with fewer observations and lesser for counties with more observations.\relax }}{10}{figure.caption.12}}
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:radon_example}{{2.1}{10}{Comparison of county parameter estimates between traditional regression (no pooling) and multilevel regression (partial pooling). Notice how the partial pooling estimates "shrink toward the mean". Further note how this shrinkage is greater for the counties with fewer observations and lesser for counties with more observations.\relax }{figure.caption.12}{}}
-\newlabel{eq:mlm_ex}{{2.5}{10}{Multilevel Modelling}{equation.2.2.5}{}}
-\citation{Gelman2006}
-\citation{Gelman2006}
-\citation{Gelman2006b}
-\citation{pymc32018}
-\citation{Gelman2006b}
-\citation{Gelman2006b}
-\citation{Gelman2014}
-\citation{Gelman2006}
-\citation{McElreath2020}
-\citation{Pearl2000}
-\citation{Gelman2006b}
-\citation{Betancourt2017}
-\citation{Betancourt2017}
-\citation{Bishop2006}
-\citation{Betancourt2017}
-\citation{Carpenter2017}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Markov Chain Monte Carlo}{13}{subsection.2.2.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Under ideal circumstances a Markov chain will first converge to the typical set (a) and then explore it efficiently (b). Unfortunately, in higher dimensions most MCMC algorithms struggle to explore the typical set and inefficiently sample a small portion (c, green). We desire algorithms that make use of the geometry of the target distribution to properly explore the typical set during sampling (d). Images are from Figures 7, 10, 11 of \cite  {Betancourt2017}. Permission to use was granted by the author under a CC BY-NC 4.0 license (https://creativecommons.org/licenses/by-nc/4.0/).\relax }}{14}{figure.caption.13}}
-\newlabel{fig:mcmc}{{2.2}{14}{Under ideal circumstances a Markov chain will first converge to the typical set (a) and then explore it efficiently (b). Unfortunately, in higher dimensions most MCMC algorithms struggle to explore the typical set and inefficiently sample a small portion (c, green). We desire algorithms that make use of the geometry of the target distribution to properly explore the typical set during sampling (d). Images are from Figures 7, 10, 11 of \cite {Betancourt2017}. Permission to use was granted by the author under a CC BY-NC 4.0 license (https://creativecommons.org/licenses/by-nc/4.0/).\relax }{figure.caption.13}{}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{14}{subfigure.2.1}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{14}{subfigure.2.2}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{14}{subfigure.2.3}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{14}{subfigure.2.4}}
-\citation{Metropolis1953}
-\citation{Hastings1970}
-\citation{Hastings1970}
-\citation{German1984}
-\citation{Betancourt2017}
-\citation{Carpenter2017}
-\citation{Betancourt2017}
-\citation{Betancourt2017}
-\citation{Betancourt2017}
-\citation{Betancourt2017}
-\citation{Betancourt2017}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}Hamiltonian Monte Carlo}{17}{subsection.2.2.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces The gradient and corresponding vector field of a probability distribution points to its mode which is often away from the typical set in higher dimensions (a). Ideally we want to twist the vector field to align with the typical set (b). The mode, gradient, and typical set of a probabilistic system are mathematically equivalent to a planet, gravitational field, and orbit in a physical system (c). Adding momentum to the system to cause a satellite to enter a stable orbit (d) is equivalent to twisting a vector field to align with the typical set of a probabilistic system. Images are from Figures 12, 13, 14, 17 of \cite  {Betancourt2017}. Permission to use was granted by the author under a CC BY-NC 4.0 license (https://creativecommons.org/licenses/by-nc/4.0/).\relax }}{18}{figure.caption.14}}
-\newlabel{fig:hmc}{{2.3}{18}{The gradient and corresponding vector field of a probability distribution points to its mode which is often away from the typical set in higher dimensions (a). Ideally we want to twist the vector field to align with the typical set (b). The mode, gradient, and typical set of a probabilistic system are mathematically equivalent to a planet, gravitational field, and orbit in a physical system (c). Adding momentum to the system to cause a satellite to enter a stable orbit (d) is equivalent to twisting a vector field to align with the typical set of a probabilistic system. Images are from Figures 12, 13, 14, 17 of \cite {Betancourt2017}. Permission to use was granted by the author under a CC BY-NC 4.0 license (https://creativecommons.org/licenses/by-nc/4.0/).\relax }{figure.caption.14}{}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{18}{subfigure.3.1}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{18}{subfigure.3.2}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{18}{subfigure.3.3}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{18}{subfigure.3.4}}
-\citation{pymc3}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.5}Model Evaluation and Selection}{19}{subsection.2.2.5}}
-\@writefile{toc}{\contentsline {subsubsection}{Cross Validation, Information Criterion, and Beyond}{19}{subsubsection*.15}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Example of how increasing model complexity leads to better model fit on the train-set, but can come at the cost of increasingly worse performance on the test-set. Model fit here is measured visually and in terms of mean-squared-error (MSE: lower is better) and R-squared ($R^2$: closer to 1 is better). The dataset in (a) is generated by a degree-2 polynomial with some added noise and is split into train and test sets. A degree-1 polynomial underfits the data (b). More complex polynomials improve the fit on the train-set (c, d, e). However, increasingly complex polynomials become overfit as evidenced by increasingly worse test-set performance (d, e). The overall trend of increasing model complexity, how it relates to underfitting and overfitting, and where the tradeoff is optimal is captured in (f).\relax }}{21}{figure.caption.16}}
-\newlabel{fig:overfitting_example}{{2.4}{21}{Example of how increasing model complexity leads to better model fit on the train-set, but can come at the cost of increasingly worse performance on the test-set. Model fit here is measured visually and in terms of mean-squared-error (MSE: lower is better) and R-squared ($R^2$: closer to 1 is better). The dataset in (a) is generated by a degree-2 polynomial with some added noise and is split into train and test sets. A degree-1 polynomial underfits the data (b). More complex polynomials improve the fit on the train-set (c, d, e). However, increasingly complex polynomials become overfit as evidenced by increasingly worse test-set performance (d, e). The overall trend of increasing model complexity, how it relates to underfitting and overfitting, and where the tradeoff is optimal is captured in (f).\relax }{figure.caption.16}{}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{21}{subfigure.4.1}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{21}{subfigure.4.2}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{21}{subfigure.4.3}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{21}{subfigure.4.4}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {}}}{21}{subfigure.4.5}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {}}}{21}{subfigure.4.6}}
-\citation{Murphy2012}
-\citation{Shannon1948}
-\citation{McElreath2020}
-\citation{McElreath2020}
-\citation{McElreath2020}
-\citation{McElreath2020}
-\citation{Dunn2018}
-\citation{Akaike1974}
-\newlabel{eq:log-score}{{2.8}{23}{Cross Validation, Information Criterion, and Beyond}{equation.2.2.8}{}}
-\newlabel{eq:lppd}{{2.9}{23}{Cross Validation, Information Criterion, and Beyond}{equation.2.2.9}{}}
-\citation{Watanabe2010}
-\citation{Vehtari2016}
-\newlabel{eq:waic}{{2.11}{24}{Cross Validation, Information Criterion, and Beyond}{equation.2.2.11}{}}
-\citation{Vehtari2016}
-\newlabel{eq:psis-loo}{{2.12}{25}{Cross Validation, Information Criterion, and Beyond}{equation.2.2.12}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Posterior Predictive Checks}{25}{subsubsection*.17}}
-\newlabel{ppc}{{2.2.5}{25}{Posterior Predictive Checks}{subsubsection*.17}{}}
 \citation{Baio2010}
 \citation{Glickman1998}
 \citation{Lopez2018}
@@ -177,68 +179,73 @@
 \citation{Gelman2014}
 \citation{Gelman2006}
 \citation{McElreath2020}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Methods}{26}{chapter.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Methods}{27}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Multilevel Model}{26}{section.3.1}}
-\newlabel{multilevel_model}{{3.1}{26}{Multilevel Model}{section.3.1}{}}
-\newlabel{eq:likelihood}{{3.1}{26}{Multilevel Model}{equation.3.1.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Multilevel Model}{27}{section.4.1}}
+\newlabel{multilevel_model}{{4.1}{27}{Multilevel Model}{section.4.1}{}}
 \citation{McElreath2020}
 \citation{Gelman2014}
 \citation{Gelman2006}
 \citation{Baio2010}
-\newlabel{eq:expected points}{{3.2}{27}{Multilevel Model}{equation.3.1.2}{}}
-\newlabel{eq:sum to zero}{{3.3}{27}{Multilevel Model}{equation.3.1.3}{}}
+\newlabel{eq:likelihood}{{4.1}{28}{Multilevel Model}{equation.4.1.1}{}}
+\newlabel{eq:expected points}{{4.2}{28}{Multilevel Model}{equation.4.1.2}{}}
+\newlabel{eq:sum to zero}{{4.3}{28}{Multilevel Model}{equation.4.1.3}{}}
 \citation{pymc3}
 \citation{Baio2010}
 \citation{Benz2020}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Model Fit in PyMC3}{28}{subsection.3.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Model Fit in PyMC3}{29}{subsection.4.1.1}}
 \citation{Gelman1992}
 \citation{Brooks1997}
 \citation{Betancourt2017}
-\newlabel{eq:priors}{{3.5}{29}{Model Fit in PyMC3}{equation.3.1.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Data Experiments}{29}{section.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Complete pooling, No pooling, and Partial pooling}{29}{subsection.3.2.1}}
-\newlabel{eq:cp_model}{{3.6}{29}{Complete pooling, No pooling, and Partial pooling}{equation.3.2.6}{}}
+\citation{NS2020}
+\newlabel{eq:priors}{{4.5}{30}{Model Fit in PyMC3}{equation.4.1.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Experiments}{30}{section.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Data}{30}{subsection.4.2.1}}
+\citation{BR2020}
+\citation{RS2020}
+\citation{FR2020}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Complete pooling, No pooling, and Partial pooling}{32}{subsection.4.2.2}}
+\newlabel{eq:cp_model}{{4.6}{32}{}{equation.4.2.6}{}}
 \citation{Karlis2003}
 \citation{Baio2010}
 \citation{Benz2020}
 \citation{Payne2018}
 \citation{Cameron1990}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Negative Binomial Regression}{30}{subsection.3.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Negative Binomial Regression}{33}{subsection.4.2.3}}
 \citation{Vehtari2016}
 \citation{Watanabe2010}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Inferring Home Advantage}{31}{subsection.3.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}Inferring Home Advantage}{34}{subsection.4.2.4}}
 \citation{Vehtari2016}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Results}{32}{chapter.4}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Results}{35}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Complete pooling, No pooling, Partial pooling}{32}{section.4.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison of models via their Log-Score (higher is better) on train and test sets, as well as the PSIS-LOO estimated Log-Score, for each league. The complete-pooling model underfits, the no-pooling model overfits, and the partial-pooling model provides the best tradeoff in fitting the data while protecting against overfitting. The PSIS-LOO estimates consistently predict how the models would rank on an unseen test-set.\relax }}{33}{figure.caption.18}}
-\newlabel{fig:log_scores}{{4.1}{33}{Comparison of models via their Log-Score (higher is better) on train and test sets, as well as the PSIS-LOO estimated Log-Score, for each league. The complete-pooling model underfits, the no-pooling model overfits, and the partial-pooling model provides the best tradeoff in fitting the data while protecting against overfitting. The PSIS-LOO estimates consistently predict how the models would rank on an unseen test-set.\relax }{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {NHL}}}{33}{subfigure.1.1}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {NBA}}}{33}{subfigure.1.2}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {MLB}}}{33}{subfigure.1.3}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {NFL}}}{33}{subfigure.1.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Comparison of models via their PSIS-LOO estimated Log-Score for each league, ranked from best (highest) to worst (lowest) on the y-axis. The black points and lines represent the point estimate and its standard error. The grey triangle and lines represent the estimated difference and the standard error of the difference for each model relative to the best model. The standard error of the difference is generally much smaller than the standard error of the estimate because errors in the estimates for each model are highly correlated.\relax }}{34}{figure.caption.19}}
-\newlabel{fig:psis_loo}{{4.2}{34}{Comparison of models via their PSIS-LOO estimated Log-Score for each league, ranked from best (highest) to worst (lowest) on the y-axis. The black points and lines represent the point estimate and its standard error. The grey triangle and lines represent the estimated difference and the standard error of the difference for each model relative to the best model. The standard error of the difference is generally much smaller than the standard error of the estimate because errors in the estimates for each model are highly correlated.\relax }{figure.caption.19}{}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {NHL}}}{34}{subfigure.2.1}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {NBA}}}{34}{subfigure.2.2}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {MLB}}}{34}{subfigure.2.3}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {NFL}}}{34}{subfigure.2.4}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Negative Binomial Regression}{35}{section.4.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Inferring Home Advantage}{35}{section.4.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Comparison of distribution of home points in the models and the observed data for each league. The Negative Binomial model noticeably provides a better overall fit across each league.\relax }}{36}{figure.caption.20}}
-\newlabel{fig:comparisons}{{4.3}{36}{Comparison of distribution of home points in the models and the observed data for each league. The Negative Binomial model noticeably provides a better overall fit across each league.\relax }{figure.caption.20}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Comparison of estimated negative log-likelihood of leave-one-out cross-validation (LOO) for each model across each league. The differences between the Poisson, Negative Binomial (NB), and Normal models are reported relative to the best fitting model (dLOO) for each league; along with the standard error of the estimated differences (dSE). The dispersion statistic, \(\sigma _p\), indicates how much greater the variance is than the mean for point totals in each league and signals overdispersion when \(\sigma _p > 2\). The NB model noticeably outperforms the Poisson model for leagues with greater overdispersion (MLB and NFL) while being nearly identical for leagues with little to no overdispersion (NHL and NBA). The NB model also outperforms the Normal model in each league except the NFL where they are close to one another while both vastly outperforming the Poisson model.\relax }}{37}{table.caption.21}}
-\newlabel{tab:loo}{{4.1}{37}{Comparison of estimated negative log-likelihood of leave-one-out cross-validation (LOO) for each model across each league. The differences between the Poisson, Negative Binomial (NB), and Normal models are reported relative to the best fitting model (dLOO) for each league; along with the standard error of the estimated differences (dSE). The dispersion statistic, \(\sigma _p\), indicates how much greater the variance is than the mean for point totals in each league and signals overdispersion when \(\sigma _p > 2\). The NB model noticeably outperforms the Poisson model for leagues with greater overdispersion (MLB and NFL) while being nearly identical for leagues with little to no overdispersion (NHL and NBA). The NB model also outperforms the Normal model in each league except the NFL where they are close to one another while both vastly outperforming the Poisson model.\relax }{table.caption.21}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Distributions of the estimated home advantage for the NHL, NBA, MLB, and NFL for pre and post COVID adjusted seasons. Home advantage for playoffs are reported for NHL and NBA because that is when their COVID restricted games took place. Home advantage for regular season is reported for MLB and NFL as their respective playoff seasons are too small for stable results. Red distributions represent COVID-19 bubble adjusted seasons.\relax }}{38}{figure.caption.22}}
-\newlabel{fig:ha_pooled}{{4.4}{38}{Distributions of the estimated home advantage for the NHL, NBA, MLB, and NFL for pre and post COVID adjusted seasons. Home advantage for playoffs are reported for NHL and NBA because that is when their COVID restricted games took place. Home advantage for regular season is reported for MLB and NFL as their respective playoff seasons are too small for stable results. Red distributions represent COVID-19 bubble adjusted seasons.\relax }{figure.caption.22}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Distributions of the estimated home advantage for the NHL, NBA, MLB, and NFL over the past 5 seasons from 2016-2020. Home advantage for playoffs are reported for NHL and NBA because that is when their COVID restricted games took place. Home advantage for regular season is reported for MLB and NFL as their respective playoff seasons are too small for stable results. Red distributions represent COVID-19 bubble adjusted seasons.\relax }}{40}{figure.caption.23}}
-\newlabel{fig:ha_main}{{4.5}{40}{Distributions of the estimated home advantage for the NHL, NBA, MLB, and NFL over the past 5 seasons from 2016-2020. Home advantage for playoffs are reported for NHL and NBA because that is when their COVID restricted games took place. Home advantage for regular season is reported for MLB and NFL as their respective playoff seasons are too small for stable results. Red distributions represent COVID-19 bubble adjusted seasons.\relax }{figure.caption.23}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Complete pooling, No pooling, Partial pooling}{35}{section.5.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Comparison of models via their Log-Score (higher is better) on train and test sets, as well as the PSIS-LOO estimated Log-Score, for each league. The complete-pooling model underfits, the no-pooling model overfits, and the partial-pooling model provides the best tradeoff in fitting the data while protecting against overfitting. The PSIS-LOO estimates consistently predict how the models would rank on an unseen test-set.\relax }}{36}{figure.caption.16}}
+\newlabel{fig:log_scores}{{5.1}{36}{Comparison of models via their Log-Score (higher is better) on train and test sets, as well as the PSIS-LOO estimated Log-Score, for each league. The complete-pooling model underfits, the no-pooling model overfits, and the partial-pooling model provides the best tradeoff in fitting the data while protecting against overfitting. The PSIS-LOO estimates consistently predict how the models would rank on an unseen test-set.\relax }{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {NHL}}}{36}{subfigure.1.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {NBA}}}{36}{subfigure.1.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {MLB}}}{36}{subfigure.1.3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {NFL}}}{36}{subfigure.1.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Comparison of models via their PSIS-LOO estimated Log-Score for each league, ranked from best (highest) to worst (lowest) on the y-axis. The black points and lines represent the point estimate and its standard error. The grey triangle and lines represent the estimated difference and the standard error of the difference for each model relative to the best model. The standard error of the difference is generally much smaller than the standard error of the estimate because errors in the estimates for each model are highly correlated.\relax }}{37}{figure.caption.17}}
+\newlabel{fig:psis_loo}{{5.2}{37}{Comparison of models via their PSIS-LOO estimated Log-Score for each league, ranked from best (highest) to worst (lowest) on the y-axis. The black points and lines represent the point estimate and its standard error. The grey triangle and lines represent the estimated difference and the standard error of the difference for each model relative to the best model. The standard error of the difference is generally much smaller than the standard error of the estimate because errors in the estimates for each model are highly correlated.\relax }{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {NHL}}}{37}{subfigure.2.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {NBA}}}{37}{subfigure.2.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {MLB}}}{37}{subfigure.2.3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {NFL}}}{37}{subfigure.2.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Negative Binomial Regression}{38}{section.5.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Inferring Home Advantage}{38}{section.5.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Comparison of distribution of home points in the models and the observed data for each league. The Negative Binomial model noticeably provides a better overall fit across each league.\relax }}{39}{figure.caption.18}}
+\newlabel{fig:comparisons}{{5.3}{39}{Comparison of distribution of home points in the models and the observed data for each league. The Negative Binomial model noticeably provides a better overall fit across each league.\relax }{figure.caption.18}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Comparison of estimated negative log-likelihood of leave-one-out cross-validation (LOO) for each model across each league. The differences between the Poisson, Negative Binomial (NB), and Normal models are reported relative to the best fitting model (dLOO) for each league; along with the standard error of the estimated differences (dSE). The dispersion statistic, \(\sigma _p\), indicates how much greater the variance is than the mean for point totals in each league and signals overdispersion when \(\sigma _p > 2\). The NB model noticeably outperforms the Poisson model for leagues with greater overdispersion (MLB and NFL) while being nearly identical for leagues with little to no overdispersion (NHL and NBA). The NB model also outperforms the Normal model in each league except the NFL where they are close to one another while both vastly outperforming the Poisson model.\relax }}{40}{table.caption.19}}
+\newlabel{tab:loo}{{5.1}{40}{Comparison of estimated negative log-likelihood of leave-one-out cross-validation (LOO) for each model across each league. The differences between the Poisson, Negative Binomial (NB), and Normal models are reported relative to the best fitting model (dLOO) for each league; along with the standard error of the estimated differences (dSE). The dispersion statistic, \(\sigma _p\), indicates how much greater the variance is than the mean for point totals in each league and signals overdispersion when \(\sigma _p > 2\). The NB model noticeably outperforms the Poisson model for leagues with greater overdispersion (MLB and NFL) while being nearly identical for leagues with little to no overdispersion (NHL and NBA). The NB model also outperforms the Normal model in each league except the NFL where they are close to one another while both vastly outperforming the Poisson model.\relax }{table.caption.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Distributions of the estimated home advantage for the NHL, NBA, MLB, and NFL for pre and post COVID adjusted seasons. Home advantage for playoffs are reported for NHL and NBA because that is when their COVID restricted games took place. Home advantage for regular season is reported for MLB and NFL as their respective playoff seasons are too small for stable results. Red distributions represent COVID-19 bubble adjusted seasons.\relax }}{41}{figure.caption.20}}
+\newlabel{fig:ha_pooled}{{5.4}{41}{Distributions of the estimated home advantage for the NHL, NBA, MLB, and NFL for pre and post COVID adjusted seasons. Home advantage for playoffs are reported for NHL and NBA because that is when their COVID restricted games took place. Home advantage for regular season is reported for MLB and NFL as their respective playoff seasons are too small for stable results. Red distributions represent COVID-19 bubble adjusted seasons.\relax }{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Distributions of the estimated home advantage for the NHL, NBA, MLB, and NFL over the past 5 seasons from 2016-2020. Home advantage for playoffs are reported for NHL and NBA because that is when their COVID restricted games took place. Home advantage for regular season is reported for MLB and NFL as their respective playoff seasons are too small for stable results. Red distributions represent COVID-19 bubble adjusted seasons.\relax }}{43}{figure.caption.21}}
+\newlabel{fig:ha_main}{{5.5}{43}{Distributions of the estimated home advantage for the NHL, NBA, MLB, and NFL over the past 5 seasons from 2016-2020. Home advantage for playoffs are reported for NHL and NBA because that is when their COVID restricted games took place. Home advantage for regular season is reported for MLB and NFL as their respective playoff seasons are too small for stable results. Red distributions represent COVID-19 bubble adjusted seasons.\relax }{figure.caption.21}{}}
 \citation{McHill2020}
 \citation{Hall2020}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusions}{41}{chapter.5}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusions}{44}{chapter.6}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \citation{Pollard2005a}
@@ -278,7 +285,7 @@
 \bibcite{David1998}{18}
 \bibcite{Dohmen2016}{19}
 \bibcite{Dunn2018}{20}
-\@writefile{toc}{\contentsline {chapter}{References}{44}{section*.24}}
+\@writefile{toc}{\contentsline {chapter}{References}{47}{section*.22}}
 \bibcite{Forrest2005}{21}
 \bibcite{Garicano2005}{22}
 \bibcite{Gelman2006b}{23}
@@ -315,11 +322,11 @@
 \bibcite{Vehtari2016}{54}
 \bibcite{Watanabe2010}{55}
 \bibcite{usatoday2020}{56}
-\@writefile{toc}{\contentsline {chapter}{Appendix \numberline {A}Appendix}{47}{Appendix.1.A}}
+\@writefile{toc}{\contentsline {chapter}{Appendix \numberline {A}Appendix}{50}{Appendix.1.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{lot}{\contentsline {table}{\numberline {A.1}{\ignorespaces The estimated probabilities that the home advantage parameter during the 2020 COVID-19 restricted games ($\beta _{20}$) is less than 0, the previous four seasons (2016-2019) mean ($\mathaccentV {bar}016{\beta }_{16-19}$), and the previous seasons individual means ($\mathaccentV {bar}016{\beta }_{19}$, $\mathaccentV {bar}016{\beta }_{18}$, $\mathaccentV {bar}016{\beta }_{17}$, $\mathaccentV {bar}016{\beta }_{16}$).\relax }}{47}{table.caption.26}}
-\newlabel{tab:ha_probs}{{A.1}{47}{The estimated probabilities that the home advantage parameter during the 2020 COVID-19 restricted games ($\beta _{20}$) is less than 0, the previous four seasons (2016-2019) mean ($\bar {\beta }_{16-19}$), and the previous seasons individual means ($\bar {\beta }_{19}$, $\bar {\beta }_{18}$, $\bar {\beta }_{17}$, $\bar {\beta }_{16}$).\relax }{table.caption.26}{}}
-\@writefile{toc}{\contentsline {chapter}{Appendix \numberline {B}Another Sample Appendix}{48}{Appendix.1.B}}
+\@writefile{lot}{\contentsline {table}{\numberline {A.1}{\ignorespaces The estimated probabilities that the home advantage parameter during the 2020 COVID-19 restricted games ($\beta _{20}$) is less than 0, the previous four seasons (2016-2019) mean ($\mathaccentV {bar}016{\beta }_{16-19}$), and the previous seasons individual means ($\mathaccentV {bar}016{\beta }_{19}$, $\mathaccentV {bar}016{\beta }_{18}$, $\mathaccentV {bar}016{\beta }_{17}$, $\mathaccentV {bar}016{\beta }_{16}$).\relax }}{50}{table.caption.24}}
+\newlabel{tab:ha_probs}{{A.1}{50}{The estimated probabilities that the home advantage parameter during the 2020 COVID-19 restricted games ($\beta _{20}$) is less than 0, the previous four seasons (2016-2019) mean ($\bar {\beta }_{16-19}$), and the previous seasons individual means ($\bar {\beta }_{19}$, $\bar {\beta }_{18}$, $\bar {\beta }_{17}$, $\bar {\beta }_{16}$).\relax }{table.caption.24}{}}
+\@writefile{toc}{\contentsline {chapter}{Appendix \numberline {B}Another Sample Appendix}{51}{Appendix.1.B}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
