@@ -85,7 +85,7 @@ The MLB data is sourced from retrosheet \cite{RS2020}. A typical MLB season cons
 
 The NFL data is sourced from the football-reference website \cite{FR2020}. A typical NFL season consists of 32 teams each playing 16 games for a total of 256 games. The playoffs usually consist of a bracket of the top 12 teams playing best-of-one games (the top 4 teams getting a first round ``bye") resulting in 11 games total. Although the 2020 season had restrictions on fan attendance, the regular season schedule did not change and the playoff set-up only slightly changed by expanding to consist of the top 14 teams (only the top 2 getting a first round ``bye") resulting in 13 games total. We exclude the Super Bowl as well as international site games from our analysis for consistency, as they are generally played at neutral sites and there are very few of them (i.e. 4-5 neutral site games out of a total 256 games each season).
 
-\subsection{Complete pooling, No pooling, and Partial pooling}
+\subsection{Complete pooling, No pooling, and Partial pooling} \label{experiment_1}
 
 \subsubsection*{Objective}
 
@@ -118,7 +118,7 @@ To compare these models we randomly split each sports dataset in half to create 
 While one of the primary advantages of Bayesian models is computing a full distribution rather than only a point estimate, we can generate point estimates by taking the mean of the sample distribution of predictions for each model as their respective point estimate predictions to be compared to the actual data. The models are then compared by their mean squared error (MSE), with the results shown in Table ??. There are two key features that stand out in the results in Table ??. First, both the no pooling model and the partial pooling model have lower MSEs in both training and testing. This indicates that the completely pooled model is underfit and that the no pooling and partial pooling model do improve model fit by including group parameters (team ratings in this specific case). Second, the no pooling model provides the best model fit on the training data, but provides worse model fit than the partial pooling model on the test data. This shows the effect of regularization via shrinkage to the mean that was theoretical discussed earlier in section ??. These results give empirical evidence that multilevel models and their partial pooling provide improved model fit while protecting against overfitting, and is the reason we opted to use a multilevel model as the model of choice for inferring home advantage in this thesis.
 \end{comment}
 
-\subsection{Negative Binomial Regression}
+\subsection{Negative Binomial Regression} \label{experiment_2}
 
 \subsubsection*{Objective}
 

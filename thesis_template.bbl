@@ -116,6 +116,11 @@ D.~Forrest, J.~Beaumont, J.~Goddard, and R.~Simmons.
   professional sports leagues.
 \newblock {\em Journal of Sports Sciences}, 23(4):439--445, 2005.
 
+\bibitem{Fox2008}
+J.~Fox.
+\newblock {\em Applied Regression Analysis and Generalized Linear Models}.
+\newblock Sage Publications, Inc., 2008.
+
 \bibitem{Garicano2005}
 L.~Garicano, I.~Palacios-Huerta, and C.~Prendergast.
 \newblock Favoritism under social pressure.
@@ -234,6 +239,12 @@ Kevin~P. Murphy.
 \newblock {\em Machine Learning: A Probabilistic Perspective}.
 \newblock MIT Press, 2012.
 
+\bibitem{NS2020}
+NaturalStatTrick.
+\newblock National hockey league data, 2020.
+\newblock data retrieved from Natural Stat Trick,
+  \url{http://www.naturalstattrick.com/}.
+
 \bibitem{Nevill1999}
 A.~M. Nevill and R.~L. Holder.
 \newblock Home advantage in sport.
@@ -256,6 +267,11 @@ R.~Pollard and G.~Pollard.
   north america and england (1876-2003).
 \newblock {\em Journal of Sports Sciences}, 23(4):337--350, 2005.
 
+\bibitem{RS2020}
+Retrosheet.
+\newblock Major league baseball data, 2020.
+\newblock data retrieved from retrosheet, \url{http://www.retrosheet.org/}.
+
 \bibitem{pymc3}
 J.~Salvatier, T.~V. Wiecki, and C.~Fonnesbeck.
 \newblock Probabilistic programming in python using pymc3.
@@ -276,6 +292,18 @@ Barry Schwartz and Stephen~F. Barsky.
 Claude~E. Shannon.
 \newblock A mathematical theory of communication.
 \newblock {\em Bell System Technical Journal}, 27(3):379--423, 1948.
+
+\bibitem{BR2020}
+SportsReferenceLLC.
+\newblock National basketball association data, 2020.
+\newblock data retrieved from basketball-reference,
+  \url{http://www.basketball-reference.com/}.
+
+\bibitem{FR2020}
+SportsReferenceLLC.
+\newblock National football league data, 2020.
+\newblock data retrieved from pro-football-reference,
+  \url{http://www.pro-football-reference.com/}.
 
 \bibitem{Stigler1986}
 S.M. Stigler.
