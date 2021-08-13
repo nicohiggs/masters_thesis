@@ -7,7 +7,7 @@ This chapter presents the results of the data experiments, making up the main co
 	\subfloat[NBA]{\includegraphics[width=0.5\textwidth]{figures/logscore_NBA.pdf}} \\
 	\subfloat[MLB]{\includegraphics[width=0.5\textwidth]{figures/logscore_MLB.pdf}} 
 	\subfloat[NFL]{\includegraphics[width=0.5\textwidth]{figures/logscore_NFL.pdf}}
-	\caption{Comparison of models via their Log-Score (higher is better) on train and test sets, as well as the PSIS-LOO estimated Log-Score, for each league. The complete-pooling model underfits, the no-pooling model overfits, and the partial-pooling model provides the best tradeoff in fitting the data while protecting against overfitting. The PSIS-LOO estimates consistently predict how the models would rank on an unseen test-set.}
+	\caption{Comparison of models via their Log-Score (higher is better) on train and test sets, as well as the PSIS-LOO estimated Log-Score, for each league. The complete-pooling model under-fits, the no-pooling model over-fits, and the partial-pooling model provides the best trade-off in fitting the data while protecting against over-fitting. The PSIS-LOO estimates consistently predict how the models would rank on an unseen test-set.}
 	\label{fig:log_scores}
 \end{figure}
 
@@ -20,7 +20,7 @@ This chapter presents the results of the data experiments, making up the main co
 	\label{fig:psis_loo}
 \end{figure}
 
-The results of comparing models via their Log-Score, and how well PSIS-LOO is at estimating the out-of-sample performance, can be seen in Figure \ref{fig:log_scores}. The results show the same general trends across each league: 1) The complete-pooling model underfits the data compared to the other models, but it also overfits less compared to the other models as seen by its test-set performance not degrading as much, 2) The no-pooling model overfits the data the most as it generally has the best performance on the train-set but never has the best performance on the test-set, 3) The partial-pooling model consistently has the best train-set performance and is therefore the best performing model.
+The results of comparing models via their Log-Score, and how well PSIS-LOO is at estimating the out-of-sample performance, can be seen in Figure \ref{fig:log_scores}. The results show the same general trends across each league: 1) The complete-pooling model under-fits the data compared to the other models, but it also over-fits less compared to the other models as seen by its test-set performance not degrading as much, 2) The no-pooling model over-fits the data the most as it generally has the best performance on the train-set but never has the best performance on the test-set, 3) The partial-pooling model consistently has the best train-set performance and is therefore the best performing model.
 
 These results confirm the advantageous theory behind multilevel modelling explored in the Background chapter. The multilevel model (partial-pooling model) consistently outperformed the complete-pooling model on both the train-set and the test-set. Interestingly the multilevel model consistently performed worse than the no-pooling model on the train-set but outperformed the no-pooling model on the test-sets. This is regularization at work and shows the efficacy of multilevel modelling over traditional regression. but fits the train-set worse than the no-pooling model.
 
