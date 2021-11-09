@@ -14,14 +14,17 @@ Beyond the motivation for adopting a Bayesian framework, we further show that mu
 
 By examining the resulting home advantage parameter estimates of our model from before and during the COVID-19 pandemic, we can draw conclusions about the existence of the home advantage phenomenon and provide new evidence for its potential causes. We hypothesize that home advantage is a real phenomenon, thus we expect its parameter estimate to drop during the COVID-19 seasons relative to before the COVID-19 seasons. We are also interested in examining if any differences in relative changes in home advantage exist across the leagues as some leagues had different COVID-19 restrictions which could affect home advantage differently. We also show that point totals in North American professional sports are prone to overdispersion, thus, the Negative Binomial distribution allows for better model fit than the more common Poisson and Normal distributions used in regression analyses. We further show that a multilevel model that pools information for teams offensive and defensive strengths provides better model fit as measured by estimated out-of-sample predictive fit as compared to traditional regression modelling and simple averaging used in many other works of sports modelling and home advantage inference.
 
+We believe our model would potentially benefit coaching staffs as well as stakeholders in the gambling industry. Coaching staffs could benefit from our model when determining roster changes. This is relevant when coaches need to balance developing younger players and giving their backups play-time without hurting their teams overall performance and place in the league standings. By using our model to better quantify relative differences in team strengths and home advantage, coaches could more precisely determine for which games they could play their younger players and backups more without sacrificing too many game wins. Our model also benefits both bookmakers and bettors in the gambling industry by better quantifying the effect of, the change in, and the uncertainty of home advantage both in times of relative stability (e.g. pre-COVID-19) and in less stable times (e.g. the return to play of COVID-19). This is useful for anyone trying to set more accurate betting lines (i.e. bookmakers), or someone trying to identify less accurate betting lines (i.e. bettors).
+
 The main contributions of this thesis can be summarized as follows:
 \begin{enumerate}
 	\item First study to provide concrete analysis of home advantage in a controlled setting for the NHL, NBA, MLB, and NFL.
 	\item Corroberates results from similar studies analysing professional European soccer leagues finding a drop in home advantage in some but not all leagues.
 	\item Organized a dataset comprised of game results across the NHL, NBA, MLB, and NFL for the years 2016-2020.
 	\item Developed a Bayesian multilevel model, provided background on multilevel modelling and evaluation, demonstrated efficacy of model on the datasets used in this thesis.
-	\item Demonstrated how North American professional sports are prone to overdispersion in point totals
+	\item Demonstrated how North American professional sports are prone to overdispersion in point totals.
 	\item Proposed a Negative Binomial multilevel regression model to account for overdispersion, evaluated with respect to Poisson and Normal regression models commonly performed in related work.
+	\item Developed a model that potentially benefits coaching staffs as well as stakeholders in the gambling industry.
 \end{enumerate}
 
 \section{Thesis Organization}

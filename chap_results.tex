@@ -1,6 +1,6 @@
 This chapter presents the results of the data experiments, making up the main contributions of this thesis, introduced and explained in Methods chapter.
 
-\section{Complete pooling, No pooling, Partial pooling}
+\section{Complete pooling, No pooling, Partial pooling} \label{results_1}
 
 \begin{figure}
 	\subfloat[NHL]{\includegraphics[width=0.5\textwidth]{figures/logscore_NHL.pdf}} 
@@ -22,9 +22,9 @@ This chapter presents the results of the data experiments, making up the main co
 
 The results of comparing models via their Log-Score, and how well PSIS-LOO is at estimating the out-of-sample performance, can be seen in Figure \ref{fig:log_scores}. The results show the same general trends across each league: 1) The complete-pooling model under-fits the data compared to the other models, but it also over-fits less compared to the other models as seen by its test-set performance not degrading as much, 2) The no-pooling model over-fits the data the most as it generally has the best performance on the train-set but never has the best performance on the test-set, 3) The partial-pooling model consistently has the best train-set performance and is therefore the best performing model.
 
-These results confirm the advantageous theory behind multilevel modelling explored in the Background chapter. The multilevel model (partial-pooling model) consistently outperformed the complete-pooling model on both the train-set and the test-set. Interestingly the multilevel model consistently performed worse than the no-pooling model on the train-set but outperformed the no-pooling model on the test-sets. This is regularization at work and shows the efficacy of multilevel modelling over traditional regression. but fits the train-set worse than the no-pooling model.
+These results confirm the advantageous theory behind multilevel modelling explored in the Background chapter. The multilevel model (partial-pooling model) consistently outperformed the complete-pooling model on both the train-set and the test-set. Interestingly the multilevel model consistently performed worse than the no-pooling model on the train-set but outperformed the no-pooling model on the test-sets. This is regularization at work and shows the efficacy of multilevel modelling over traditional regression. but fits the train-set worse than the no-pooling model. We note that we also performed this same experiment with a 75-25 train-test split which generated the same results as the 50-50 train-test split we are reporting here.
 
-The PSIS-LOO estimates of out-of-sample performance consistently ranked the models in the correct order measured by test-set performance, despite only having the train-set available to make these estimates. This shows how effective PSIS-LOO is at estimating out-of-sample performance, why it has become the current state of the art for model evaluation in Bayesian statistics, and why we opt for using PSIS-LOO estimates for ranking models in this thesis. We note that the exact magnitude of the PSIS-LOO estimates were sometimes over or under estimated relative to the test-set results, but that for a given dataset they were consistently over or under estimated. This is interesting because one of the additional contributions of Vehtari et el. \cite{Vehtari2016} was showing errors in PSIS-LOO estimates are highly correlated for the same dataset. Instead of more naive computations for the standard error, they instead derived an estimated for the standard error of the difference between models trained an evaluated on the same dataset. This new standard error generally provides tighter bounds that more accurately reflect the correlation in errors of PSIS-LOO estimates on the same dataset. A graphical representation of this can be seen in Figure \ref{fig:psis-loo}.
+The PSIS-LOO estimates of out-of-sample performance consistently ranked the models in the correct order measured by test-set performance, despite only having the train-set available to make these estimates. This shows how effective PSIS-LOO is at estimating out-of-sample performance, why it has become the current state of the art for model evaluation in Bayesian statistics, and why we opt for using PSIS-LOO estimates for ranking models in this thesis. We note that the exact magnitude of the PSIS-LOO estimates were sometimes over or under estimated relative to the test-set results, but that for a given dataset they were consistently over or under estimated. This is interesting because one of the additional contributions of Vehtari et el. \cite{Vehtari2016} was showing errors in PSIS-LOO estimates are highly correlated for the same dataset. Instead of more naive computations for the standard error, they instead derived an estimated for the standard error of the difference between models trained an evaluated on the same dataset. This new standard error generally provides tighter bounds that more accurately reflect the correlation in errors of PSIS-LOO estimates on the same dataset. A graphical representation of this can be seen in Figure \ref{fig:psis_loo}.
 
 \begin{comment}
 \begin{figure}
@@ -46,7 +46,7 @@ The PSIS-LOO estimates of out-of-sample performance consistently ranked the mode
 \end{figure}
 \end{comment}
 
-\section{Negative Binomial Regression}
+\section{Negative Binomial Regression} \label{results_2}
 
 \begin{figure}
 	\centering
@@ -83,7 +83,7 @@ NFL & 4.56 & NB & -9841.7 & 133.0 & 22.1\\
 \caption{Comparison of estimated negative log-likelihood of leave-one-out cross-validation (LOO) for each model across each league. The differences between the Poisson, Negative Binomial (NB), and Normal models are reported relative to the best fitting model (dLOO) for each league; along with the standard error of the estimated differences (dSE). The dispersion statistic, \(\sigma_p\), indicates how much greater the variance is than the mean for point totals in each league and signals overdispersion when \(\sigma_p > 2\). The NB model noticeably outperforms the Poisson model for leagues with greater overdispersion (MLB and NFL) while being nearly identical for leagues with little to no overdispersion (NHL and NBA). The NB model also outperforms the Normal model in each league except the NFL where they are close to one another while both vastly outperforming the Poisson model.}\label{tab:loo}
 \end{table}
 
-\section{Inferring Home Advantage}
+\section{Inferring Home Advantage} \label{results_3}
 
 \begin{figure}
 	\centering

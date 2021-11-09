@@ -604,8 +604,10 @@ By\\
 \@author\\
 \ifx\proposal\undefined
 \strut\\
-\copyright \@author, \@defencedate.  All rights reserved.
+\copyright \@author, \@defencedate.  All rights reserved.\\
 \fi
+\strut\\
+Unless otherwise noted, copyright of the material in this thesis belongs to the author.
 \end{center}
 \vfil
 }
